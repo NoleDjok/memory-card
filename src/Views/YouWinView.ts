@@ -35,6 +35,7 @@ export class YouWinView extends AnimateViewBase {
     }
 
     protected onInitialize(): void {
+        this.gotoAndStop('hide');
 
     }
 }
