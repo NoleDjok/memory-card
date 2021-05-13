@@ -1,0 +1,7 @@
+"use strict";
+/*!@license
+ * Copyright (c) Arkadium Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Denis Gusarov <denis.gusarov@arkadium.com>
+ */var __extends=this&&this.__extends||function(){var n=function(t,r){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,r){t.__proto__=r}||function(t,r){for(var o in r)r.hasOwnProperty(o)&&(t[o]=r[o])})(t,r)};return function(t,r){function o(){this.constructor=t}n(t,r),t.prototype=null===r?Object.create(r):(o.prototype=r.prototype,new o)}}();Object.defineProperty(exports,"__esModule",{value:!0});var CommandBase_1=require("./CommandBase"),DataUtils_1=require("../utils/DataUtils"),ColorTransform=function(o){function t(t,r){return o.call(this,t,r)||this}return __extends(t,o),t.prototype._round=function(t){return DataUtils_1.DataUtils.toPrecision(t)},t.prototype.toFrame=function(t){t.c=[this.colorMatrix.r,this._round(this.colorMatrix.rA),this.colorMatrix.g,this._round(this.colorMatrix.gA),this.colorMatrix.b,this._round(this.colorMatrix.bA)],t.a=Math.max(0,Math.min(1,this.colorMatrix.a+this.colorMatrix.aA))},t}(CommandBase_1.CommandBase);exports.ColorTransform=ColorTransform;

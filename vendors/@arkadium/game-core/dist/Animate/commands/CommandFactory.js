@@ -1,0 +1,7 @@
+"use strict";
+/*!@license
+ * Copyright (c) Arkadium Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Denis Gusarov <denis.gusarov@arkadium.com>
+ */Object.defineProperty(exports,"__esModule",{value:!0});var BlendMode_1=require("./BlendMode"),ColorTransform_1=require("./ColorTransform"),Filter_1=require("./Filter"),Mask_1=require("./Mask"),Move_1=require("./Move"),Place_1=require("./Place"),SoundPlace_1=require("./SoundPlace"),Remove_1=require("./Remove"),Visibility_1=require("./Visibility"),ZOrder_1=require("./ZOrder"),CommandFactory=function(){function o(e,r){}return o.prototype.toString=function(){return"[CommandFactory (type:"+this.type+")]"},o.prototype.toFrame=function(e){},o.create=function(e){var r={BlendMode:BlendMode_1.BlendMode,ColorTransform:ColorTransform_1.ColorTransform,Command:o,Filter:Filter_1.Filter,Mask:Mask_1.Mask,Move:Move_1.Move,Place:Place_1.Place,SoundPlace:SoundPlace_1.SoundPlace,Remove:Remove_1.Remove,Visibility:Visibility_1.Visibility,ZOrder:ZOrder_1.ZOrder}[e.type];if(!r)throw new Error(e.type+" is not a valid timeline command");return new r(e)},o}();exports.CommandFactory=CommandFactory;

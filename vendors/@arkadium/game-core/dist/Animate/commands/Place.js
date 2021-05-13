@@ -1,0 +1,7 @@
+"use strict";
+/*!@license
+ * Copyright (c) Arkadium Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Denis Gusarov <denis.gusarov@arkadium.com>
+ */var __extends=this&&this.__extends||function(){var r=function(t,e){return(r=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)e.hasOwnProperty(n)&&(t[n]=e[n])})(t,e)};return function(t,e){function n(){this.constructor=t}r(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}}();Object.defineProperty(exports,"__esModule",{value:!0});var CommandBase_1=require("./CommandBase"),Matrix_1=require("../data/Matrix"),Rectangle_1=require("../data/Rectangle"),Place=function(r){function t(t,e){var n=r.call(this,t,e)||this;return n.transform=new Matrix_1.Matrix(n.transform),n.bounds&&(n.bounds=new Rectangle_1.Rectangle(n.bounds)),n.instanceName=n.instanceName||null,n}return __extends(t,r),t.prototype.toFrame=function(t){Object.assign(t,this.transform.toTween()),t.bounds=this.bounds,this.bounds&&(t.x+=t.bounds.x*(null!=t.sx?t.sx:1),t.y+=t.bounds.y*(null!=t.sy?t.sy:1)),t.placeAfter=this.placeAfter},t}(CommandBase_1.CommandBase);exports.Place=Place;

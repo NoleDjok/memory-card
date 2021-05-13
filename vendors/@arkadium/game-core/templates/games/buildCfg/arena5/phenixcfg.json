@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "main": "main.min.js",
+  "slug": "",
+  "sdkName": "",
+  "settings": {
+    "thumbPath": "",
+    "secondaryThumbPath": "",
+    "screenshotPath": "",
+    "promoThumbPath": ""
+  },
+  "locales": [],
+  "scoreMatrix": []
+}

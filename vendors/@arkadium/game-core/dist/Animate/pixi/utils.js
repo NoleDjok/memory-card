@@ -1,0 +1,7 @@
+"use strict";
+/*!@license
+ * Copyright (c) Arkadium Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Denis Gusarov <denis.gusarov@arkadium.com>
+ */Object.defineProperty(exports,"__esModule",{value:!0});var AnimateUtils=function(){function e(){}return e.hexToUint=function(e){return e.substr?(3===(e=e.substr(1)).length&&(e=e.replace(/([a-f0-9])/g,"$1$1")),parseInt(e,16)):0},e.fillFrames=function(e,t,r){var a=e.length;if(a<t+r&&(e.length=t+r,a<t))if(e.fill)e.fill(!1,a,t);else for(var l=a;l<t;++l)e[l]=!1;if(e.fill)e.fill(!0,t,t+r);else{var n=e.length;for(l=t;l<n;++l)e[l]=!0}},e.deserializeKeyframes=function(e){for(var t,r,a={},l=0,n={X:"x",Y:"y",A:"sx",B:"sy",C:"kx",D:"ky",R:"r",L:"a",T:"t",F:"c",V:"v"},s="",i=!1,u={};l<=e.length;)n[t=e[l]]?(i||(i=!0,a[s]=u),r&&(u[r]=this.parseValue(r,s)),r=n[t],s="",l++):t&&" "!==t?(s+=t,l++):(l++,u[r]=this.parseValue(r,s),s="",r=null,i=!(u={}));return a},e.deserializeShapes=function(e){for(var t=[],r=e.split("\n"),a=/^[a-z]{1,2}$/,l=0;l<r.length;l++){for(var n=r[l].split(" "),s=0;s<n.length;s++){var i=n[s];"#"===i[0]||a.test(i)||(n[s]=parseFloat(i))}t.push(n)}return t},e.parseValue=function(e,t){switch(e){case"c":return(t=t.split(",")).forEach(function(e,t,r){r[t]=parseFloat(e)}),t;case"t":return t;case"v":return!!parseInt(t);default:return parseFloat(t)}},e}();exports.default=AnimateUtils;

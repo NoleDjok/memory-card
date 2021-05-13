@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var ScreenOrientationEnum_1=require("./ScreenOrientationEnum"),Landscape=function(){function e(){}return e.prototype.run=function(e,n){return ScreenOrientationEnum_1.ScreenOrientationEnum.Landscape},e}();exports.Landscape=Landscape;

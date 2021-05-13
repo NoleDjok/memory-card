@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script type="text/javascript">
+        var sdkInstance = "appInsightsSDK"; window[sdkInstance] = "appInsights"; var aiName = window[sdkInstance], aisdk = window[aiName] || function (e) { function n(e) { t[e] = function () { var n = arguments; t.queue.push(function () { t[e].apply(t, n) }) } } var t = { config: e }; t.initialize = !0; var i = document, a = window; setTimeout(function () { var n = i.createElement("script"); n.src = e.url || "https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js", i.getElementsByTagName("script")[0].parentNode.appendChild(n) }); try { t.cookie = i.cookie } catch (e) { } t.queue = [], t.version = 2; for (var r = ["Event", "PageView", "Exception", "Trace", "DependencyData", "Metric", "PageViewPerformance"]; r.length;)n("track" + r.pop()); n("startTrackPage"), n("stopTrackPage"); var s = "Track" + r[0]; if (n("start" + s), n("stop" + s), n("setAuthenticatedUserContext"), n("clearAuthenticatedUserContext"), n("flush"), !(!0 === e.disableExceptionTracking || e.extensionConfig && e.extensionConfig.ApplicationInsightsAnalytics && !0 === e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)) { n("_" + (r = "onerror")); var o = a[r]; a[r] = function (e, n, i, a, s) { var c = o && o(e, n, i, a, s); return !0 !== c && t["_" + r]({ message: e, url: n, lineNumber: i, columnNumber: a, error: s }), c }, e.autoExceptionInstrumented = !0 } return t }(
+        {
+            instrumentationKey: "91b5e761-ce52-42c2-ba4c-fc9fb625431e",
+            namePrefix: "microsoft.casualgames.zone.appInsights",
+            disableAjaxTracking: true
+        }
+        );window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length;
+    </script>
+    <script>
+        var zoneSuppressExceptions = function(envelope) {
+            if (envelope.baseType === 'ExceptionData' && envelope.baseData.exceptions) {
+                for (var exceptionOffset = 0; exceptionOffset < envelope.baseData.exceptions.length; exceptionOffset++) {
+                    if (envelope.baseData.exceptions[exceptionOffset].message === 'TypeError: \'undefined\' is not an object (evaluating \'Array.prototype\') at window.onerror' &&
+                        envelope.baseData.exceptions[exceptionOffset].stack.indexOf('ZTVRefreshProxy.aspx') >= 0) {
+                            return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+
+        appInsights.queue.push(function() {
+            appInsights.addTelemetryInitializer(zoneSuppressExceptions);
+        });
+    </script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>
+	 Microsoft Solitaire Collection - MSN Games - Free Online Games
+</title>
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="//zone.msn.com/js/jquery-3.2.1.min.js">\x3C/script>');
+    </script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <script src="//ajax.microsoft.com/ajax/3.5/MicrosoftAjax.js" type="text/javascript" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//zone.msn.com/css/CookieConsent2.css" />
+    <script src="//zone.msn.com/en/CookieConsent.js"></script>
+    <link rel="stylesheet" href="//zone.msn.com/css/bakerColdDetection.css" />
+    <script src='//zone.msn.com/js/bakerCold/ads.js'></script>
+    <script src='//zone.msn.com/js/bakerCold/bakerColdDetection.js'></script>
+    <script src="//zone.msn.com/js/gameplayer/WaitOnAdLoad.js"></script>
+    <link rel='stylesheet' type='text/css' href="//zone.msn.com/css/htmlgameplayer2.css" />
+<script language="javascript" type="text/javascript" src="//zone.msn.com/js/utility.js"></script>
+<script language="javascript" type="text/javascript" src="//zone.msn.com/js/cookie.js"></script>
+<script type="text/javascript" src="https://s.aolcdn.com/ads/adsWrapperMSNI.js"></script>
+
+    <helpers:scriptreferencehelper cdnpath="//zone.msn.com/js/gameplayer/GamePlayer.js" />
+    <script type="text/javascript">
+        var xmlscore = "";
+        var objdefaultView = "";
+        var gamePlaying = false;
+        function GameMute() {
+            document.getElementById("GameControlsMute").blur();
+            document.getElementById("GameFramePlugIn").contentWindow.postMessage('mute', '*');
+            $("#GameControlsMute").find('span').toggle();
+            $("#GameControlsMute").find('label').toggle();
+        }
+        function GamePause() {
+            document.getElementById("GameControlsPause").blur();
+            document.getElementById("GameFramePlugIn").contentWindow.postMessage('pause', '*');
+            $('#GameControlsPause').find('span').toggle();
+            $("#GameControlsPause").find('label').toggle();
+        }
+        function fullscreen() {
+            $("#fullscreeniframe").find('span').toggle();
+            $("#fullscreeniframe").find('label').toggle();
+        }
+        function GameQuit() {
+            GetScore();
+        }
+        function Lplay() {
+            document.getElementById("GameControlsLplay").blur();
+        }
+        function scoreReceived(data) {
+            // Reading score from the game interface.
+            try {
+                $("#GameControlsPause").hide();
+                $("#GameControlsMute").hide();
+                $("#GameControlsQuit").hide();
+                $("#GameControlsLplay").hide();
+            } catch (err) { /*empty*/ }
+            $("#GameFramePlugIn").attr('src', '');
+            $("#GameFramePlugIn").hide();
+            $("#GameFrameContainer").hide();
+            $('#GameFramePlugIn').empty();
+            $("#GameOverFrame").show();
+            $("#GameOverContainer").show();
+            if ($('#GameOverContainer').is(":visible")) {
+                $('#GameOverFrame').height("600px");
+            }
+            try {
+                ConfigMgr();
+            } catch (err) { /*empty*/ }
+            if ($('#hdnWindowId').val() != '') {
+                $('#GameOverFrame').attr('src', "GameOverHTML.aspx?game=" + this.gameFamilyCode + "&instance=" + this.instanceCode + "&w=");
+                $('#hdnWindowId').val('');
+            }
+            else {
+                xmlscore = data;
+                try {
+                    // Setting cookies for score and xml game result.
+                    document.cookie = "ZMiscScoreXML_NGP=" + encodeURI(xmlscore) + "";
+                } catch (err) { /*empty*/ }
+                $('#GameOverFrame').attr('src', "GameOverHTML.aspx?game=" + this.gameFamilyCode + "&instance=" + this.instanceCode + "&w=" + this.windowId);
+            }
+        }
+        function initControls() {
+            $("#GameOverFrame").attr('src', '');
+            $("#GameOverFrame").empty();
+            $("#GameOverFrame").hide();
+            $("#GameOverContainer").hide();
+            $("#GameControlsMute").hide();
+            $("#GameControlsLplay").hide();
+            $("#GameControlsPause").hide();
+            $("#fullscreeniframe").hide();
+            $("#GameControlsQuit").hide();
+            if (objdefaultView.isResizeSupported) {
+                $("#fullscreeniframe").show();
+            }
+            $("#GameFramePlugIn").show();
+            $("#GameFrameContainer").show();
+        }
+        // Game interface score reading call back function.
+        // This score returns in the xml format [which returning same as flash games].
+        function GetScore() {
+            document.getElementById("GameFramePlugIn").contentWindow.postMessage('quit', '*');
+        }
+        if (window.addEventListener) {
+            // For standards-compliant web browsers.
+            window.addEventListener("message", receiveMessage, false);
+        }
+        else {
+            window.attachEvent("onmessage", receiveMessage);
+        }
+        var domainList = new Array();
+        domainList[domainList.length] = "http://zone.msn.com";
+        domainList[domainList.length] = "https://zone.msn.com";
+        domainList[domainList.length] = "http://games.ca.zone.msn.com";
+        domainList[domainList.length] = "https://games.ca.zone.msn.com";
+        domainList[domainList.length] = "http://cdn.zone.msn.com";
+        domainList[domainList.length] = "https://cdn.zone.msn.com";
+        domainList[domainList.length] = "https://player.zone.msn.com";
+        domainList[domainList.length] = "https://wgp-app-staging.azurewebsites.net";
+        domainList[domainList.length] = "https://wgp-app-uat.azurewebsites.net";
+        domainList[domainList.length] = "https://wgp-app-uat-feature-1.azurewebsites.net";
+        domainList[domainList.length] = "https://wgp-app-uat-feature-2.azurewebsites.net";
+        domainList[domainList.length] = "https://wgp-app-uat-feature-3.azurewebsites.net";
+        domainList[domainList.length] = "http://localhost";
+        domainList[domainList.length] = "https://localhost";
+        domainList[domainList.length] = "http://127.0.0.1";
+        domainList[domainList.length] = "https://127.0.0.1";
+
+        function validateDomain(origin) {
+            for (var i = 0; i < domainList.length; i++) {
+                if (origin.toLowerCase().indexOf(domainList[i], 0) === 0) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        function receiveMessage(evt) {
+            var message;
+            if (validateDomain(evt.origin)) {
+                if (evt.data.toString().indexOf("<score>") > -1) {
+                    scoreReceived(evt.data);
+                }
+                else if (evt.data.toString().indexOf("hideIcons") > -1) {
+                    try {
+                        $("#GameControlsMute").hide();
+                        $("#GameControlsPause").hide();
+                        $("#GameControlsQuit").hide();
+                    }
+                    catch (ex) { /*empty*/ }
+                }
+                else if (evt.data.toString().indexOf("showIcons") > -1) {
+                    ShowHiddenIcons(objdefaultView);
+                    setGameContainerHeight();
+                }
+                else if (evt.data.toString() == 'restart') {
+                    initControls();
+                    GetGamePlay();
+                }
+                else if (evt.data.toString() == 'newGame') {
+                    gamePlaying = true;
+                    if (objdefaultView.isPauseSupported && gamePlaying) {
+                        $("#GameControlsPause").show();
+                        setPlayIcon(false);
+                    }
+                }
+                else if (evt.data.toString() == 'gamePaused') {
+                    setPlayIcon(true);
+                }
+                else if (evt.data.toString() == 'gameUnPaused') {
+                    setPlayIcon(false);
+                }
+                else if (evt.data.toString() == 'gameEnded') {
+                    gamePlaying = false;
+                    $("#GameControlsPause").hide();
+                }
+            }
+        }
+        function setPlayIcon(flag) {
+            if (objdefaultView.isPauseSupported) {
+                if (flag) {
+                    $('#lblPlay').css('display', '');
+                    $('#ImgPlay').css('display', '');
+                    $('#lblPause').css('display', 'none');
+                    $('#ImgPause').css('display', 'none');
+                }
+                else {
+                    $('#lblPause').css('display', '');
+                    $('#ImgPause').css('display', '');
+                    $('#lblPlay').css('display', 'none');
+                    $('#ImgPlay').css('display', 'none');
+                }
+            }
+        }
+        function setGameContainerWindowMode() {
+            try {
+                var calHeight = window.innerHeight - $("#navDiv").height() - 130 - getBannerHeight();
+                $("#GameFrameContainer").height(calHeight > 530 ? calHeight : "530px");
+                if ($('#GameOverContainer').is(":visible")) {
+                    $('#GameOverFrame').css("height", "600px");
+                }
+                document.getElementById("GameFramePlugIn").contentWindow.postMessage('windowScreen', '*');
+            } catch (e) { /*empty*/ }
+        }
+        cookieConsentBannerEnabledCallback = function () {
+            setGameContainerHeight();
+        };
+
+        cookieConsentBannerDisabledCallback = function () {
+            setGameContainerHeight();
+        };
+
+        function setGameContainerHeight() {
+            var calHeight = window.innerHeight - $("#navDiv").height() - 130 - getBannerHeight();
+            $("#GameFrameContainer").height(calHeight > 530 ? calHeight : "530px");
+        }
+
+        function getBannerHeight() {
+            return $("#cookieConsentBanner").is(":visible") ? $("#cookieConsentBanner").height() : 0;
+        }
+
+        $(document).ready(function () {
+            var calHeight = window.innerHeight - $("#navDiv").height() - 130 - getBannerHeight();
+            $("leftGameAdPanel").height(calHeight + 130);
+            $("#GameFrameContainer").height(calHeight > 530 ? calHeight : "530px");
+            try {
+                $(window).resize(function () {
+                    setGameContainerWindowMode();
+                });
+            } catch (err) { /*empty*/ }
+            try {
+                ConfigMgr();
+                try {
+                    $("#GameControlsMute").hide();
+                    $("#GameControlsLplay").hide();
+                    $("#GameControlsPause").hide();
+                    $("#fullscreeniframe").hide();
+                    $("#GameControlsQuit").hide();
+
+                    if (this.defaultView.isResizeSupported) {
+                        $("#fullscreeniframe").show();
+                    }
+                    objdefaultView = this.defaultView;
+                } catch (err) { /*empty*/ }
+                // Setting cookies for score and xml game result.
+                document.cookie = "ZMiscScoreXML_NGP=''";
+            } catch (err) { /*empty*/ }
+            GetGamePlay();
+            $("#fullscreeniframe").on("click", function () {
+                toggleFullScreen();
+                return false;
+            });
+            $(document).keyup(function (event) {
+                var keycode = event.keyCode ? event.keyCode : event.which;
+                if (keycode == 122) {
+                    event.preventDefault();
+                }
+            });
+        });
+        function ShowHiddenIcons(defaultView) {
+            if (defaultView.isPauseSupported && gamePlaying) {
+                $("#GameControlsPause").show();
+            }
+            if (defaultView.isMuteSupported) {
+                $("#GameControlsMute").show();
+            }
+            if (defaultView.isResizeSupported) {
+                $("#fullscreeniframe").show();
+            }
+            if (defaultView.IsLearnToPlayAvailable) {
+                if (defaultView.learnToPlayUrl != "") {
+                    $("#GameControlsLplay").show();
+                    $("#GameControlsLplay").attr("href", defaultView.learnToPlayUrl);
+                }
+            }
+            if (defaultView.isQuitSupported) {
+                $("#GameControlsQuit").show();
+            }
+        }
+        function toggleFullScreen() {
+            document.getElementById("fullscreeniframe").blur();
+            if (!document.fullscreenElement && // Alternative standard method.
+                !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                // current working methods
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.documentElement.msRequestFullscreen) {
+                    document.documentElement.msRequestFullscreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                } else {
+                    alert("Fullscreen won't work, please make sure you're using a browser that supports it and you have enabled the feature");
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else {
+                    alert("Fullscreen won't work, please make sure you're using a browser that supports it and you have enabled the feature");
+                }
+            }
+        }
+        function getCookieValue(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        function GetGamePlay() {
+            try {
+                if ($('#hdnWindowId').val() != '') {
+                    scoreReceived("");
+                }
+                else {
+                    $('#GameFramePlugIn').attr('src', 'gameHTMLaspx.html?game=' + this.gameFamilyCode + "&instance=" + this.instanceCode);
+                }
+            } catch (err) { /*empty*/ }
+        }
+        function showFullScreen() {
+            var elem = document.getElementById("body");
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            } else {
+                alert("Fullscreen won't work, please make sure you're using a browser that supports it and you have enabled the feature");
+            }
+        }
+        function exitHandler() {
+            if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+                document.getElementById("GameFramePlugIn").contentWindow.postMessage('windowScreen', '*');
+            } else {
+                document.getElementById("GameFramePlugIn").contentWindow.postMessage('fullScreen', '*');
+            }
+            fullscreen();
+        }
+    </script>
+</head>
+<body id="body">
+    <script src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js' integrity='sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=' crossorigin='anonymous'><\/script
+                    < script>
+                        window.jQuery || document.write('<script src=\'//zone.msn.com/js/jquery-3.2.1.min.js\'>\x3C/script>');
+                    </script> 
+    <script type="text/javascript" language="javascript">
+function ConfigMgr()
+{
+this.locale = "en-us";
+// CHANGED
+this.gameFamilyCode = "mssolitairecollection";
+// CHANGED
+this.gameCode = "msso";
+this.instanceCode = "default";
+this.gameType = "7";
+this.isPauseSupported = false;
+this.isMuteSupported = true;
+this.isResizeSupported = false;
+this.isQuitSupported = false;
+this.IsLearnToPlayAvailable = false;
+this.learnToPlayUrl = "";
+this.loadingAdText1 = "You&#39;re on the way to playing your game";
+// CHANGED
+this.loadingAdText2 = "MSN Games is downloading the latest version of  Microsoft Solitaire Collection";
+this.intermissionAdText1 = "Thanks for your patience.  Your game will start again soon!";
+this.intermissionAdText2 = "Thanks to our sponsors, you get FREE games!";
+// CHANGED
+this.replayAdText1 = "Loading  Microsoft Solitaire Collection now...";
+this.replayAdText2 = "Thank you for your patience";
+this.pauseButtonText = "Pause";
+this.muteButtonText = "Mute";
+this.learnToPlayButtonText = "Learn to Play";
+this.quitButtonText = "Quit";
+this.progressBarText = "{0}% complete";
+this.gamePopServer = "//pop02.zone.msn.com";
+this.gamePopPingInterval = 1500000;
+// CHANGED
+this.gamePopLobbyCode = "pmsso_1p_x01";
+this.leaveBehindTimeOut = 60000;
+this.videoShowFrequency = 1;
+this.firstAd= "video";
+this.loadingAdEnabled= "True";
+this.hasScore= "False";
+// CHANGED - Randomly generated on the server.
+this.windowId = 1476676583;
+this.cookieDomain= "zone.msn.com";
+this.hasIntermissionAd= "True";
+this.intermissionADIntervalType = "time";
+this.minutesBtwIntermissions = 300000;
+this.deluxeDownloadURL = "";
+// CHANGED
+this.gameDefaultLink = "https://zone.msn.com/en/mssolitairecollection/default.htm";
+}
+</script>
+
+    <div class="container-fluid contentWrapper" id="contentWrapper">
+        <!-- CHANGED -->
+        <form method="post" action="./index.html?game=mssolitairecollection&amp;instance=default" id="ctl00">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwNzQ2NDkxODkPFgIeE1ZhbGlkYXRlUmVxdWVzdE1vZGUCARYEAgEPFgIeBFRleHQFvAw8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgbGFuZ3VhZ2U9ImphdmFzY3JpcHQiPg0KZnVuY3Rpb24gQ29uZmlnTWdyKCkNCnsNCnRoaXMubG9jYWxlID0gImVuLXVzIjsKdGhpcy5nYW1lRmFtaWx5Q29kZSA9ICJtc3VsdGltYXRld29yZCI7CnRoaXMuZ2FtZUNvZGUgPSAiTVNVVyI7CnRoaXMuaW5zdGFuY2VDb2RlID0gImRlZmF1bHQiOwp0aGlzLmdhbWVUeXBlID0gIjciOwp0aGlzLmlzUGF1c2VTdXBwb3J0ZWQgPSBmYWxzZTsKdGhpcy5pc011dGVTdXBwb3J0ZWQgPSBmYWxzZTsKdGhpcy5pc1Jlc2l6ZVN1cHBvcnRlZCA9IGZhbHNlOwp0aGlzLmlzUXVpdFN1cHBvcnRlZCA9IGZhbHNlOwp0aGlzLklzTGVhcm5Ub1BsYXlBdmFpbGFibGUgPSBmYWxzZTsKdGhpcy5sZWFyblRvUGxheVVybCA9ICIiOwp0aGlzLmxvYWRpbmdBZFRleHQxID0gIllvdSYjMzk7cmUgb24gdGhlIHdheSB0byBwbGF5aW5nIHlvdXIgZ2FtZSI7CnRoaXMubG9hZGluZ0FkVGV4dDIgPSAiTVNOIEdhbWVzIGlzIGRvd25sb2FkaW5nIHRoZSBsYXRlc3QgdmVyc2lvbiBvZiAgTWljcm9zb2Z0IFVsdGltYXRlIFdvcmQgR2FtZXMiOwp0aGlzLmludGVybWlzc2lvbkFkVGV4dDEgPSAiVGhhbmtzIGZvciB5b3VyIHBhdGllbmNlLiAgWW91ciBnYW1lIHdpbGwgc3RhcnQgYWdhaW4gc29vbiEiOwp0aGlzLmludGVybWlzc2lvbkFkVGV4dDIgPSAiVGhhbmtzIHRvIG91ciBzcG9uc29ycywgeW91IGdldCBGUkVFIGdhbWVzISI7CnRoaXMucmVwbGF5QWRUZXh0MSA9ICJMb2FkaW5nICBNaWNyb3NvZnQgVWx0aW1hdGUgV29yZCBHYW1lcyBub3cuLi4iOwp0aGlzLnJlcGxheUFkVGV4dDIgPSAiVGhhbmsgeW91IGZvciB5b3VyIHBhdGllbmNlIjsKdGhpcy5wYXVzZUJ1dHRvblRleHQgPSAiUGF1c2UiOwp0aGlzLm11dGVCdXR0b25UZXh0ID0gIk11dGUiOwp0aGlzLmxlYXJuVG9QbGF5QnV0dG9uVGV4dCA9ICJMZWFybiB0byBQbGF5IjsKdGhpcy5xdWl0QnV0dG9uVGV4dCA9ICJRdWl0IjsKdGhpcy5wcm9ncmVzc0JhclRleHQgPSAiezB9JSBjb21wbGV0ZSI7CnRoaXMuZ2FtZVBvcFNlcnZlciA9ICIvL3BvcDAyLnpvbmUubXNuLmNvbSI7CnRoaXMuZ2FtZVBvcFBpbmdJbnRlcnZhbCA9IDE1MDAwMDA7CnRoaXMuZ2FtZVBvcExvYmJ5Q29kZSA9ICJwbXN1d18xcF94MDEiOwp0aGlzLmxlYXZlQmVoaW5kVGltZU91dCA9IDYwMDAwOwp0aGlzLnZpZGVvU2hvd0ZyZXF1ZW5jeSA9IDE7CnRoaXMuZmlyc3RBZD0gInZpZGVvIjsKdGhpcy5sb2FkaW5nQWRFbmFibGVkPSAiVHJ1ZSI7CnRoaXMuaGFzU2NvcmU9ICJGYWxzZSI7CnRoaXMud2luZG93SWQ9IDExMDQzMTI1OTQ7CnRoaXMuY29va2llRG9tYWluPSAiem9uZS5tc24uY29tIjsKdGhpcy5oYXNJbnRlcm1pc3Npb25BZD0gIlRydWUiOwp0aGlzLmludGVybWlzc2lvbkFESW50ZXJ2YWxUeXBlID0gInRpbWUiOwp0aGlzLm1pbnV0ZXNCdHdJbnRlcm1pc3Npb25zID0gMzAwMDAwOwp0aGlzLmRlbHV4ZURvd25sb2FkVVJMID0gIiI7CnRoaXMuZ2FtZURlZmF1bHRMaW5rID0gImh0dHBzOi8vem9uZS5tc24uY29tL2VuL21zdWx0aW1hdGV3b3JkL2RlZmF1bHQuaHRtIjsKfQ0KPC9zY3JpcHQ+DQpkAgIPZBYGAgcPFgQeA3NyYwUzL2ltYWdlcy92OS9lbi11cy9nYW1lL21zdXcvVVdHX0dhbWVMb2dvXzI1MF8xNTAucG5nHgNhbHQFKCBNaWNyb3NvZnQgVWx0aW1hdGUgV29yZCBHYW1lcyBHYW1lIExvZ29kAgkPDxYCHwEFhwFNaWNyb3NvZnQgVWx0aW1hdGUgV29yZCBHYW1lcyBpcyB0aGUgdWx0aW1hdGUgY29sbGVjdGlvbiBvZiB0aGUgdGhyZWUgYmVzdCB3b3JkIGdhbWVzIGluY2x1ZGluZyBDcm9zc3dvcmRzLCBXb3JkYW1lbnQgYW5kIFdvcmQgVHdpc3Rlci5kZAINDxYCHgVzdHlsZQUfZGlzcGxheTpub25lO3Zpc2liaWxpdHk6aGlkZGVuO2Rkon1n4m8Tm/6SGNlC+nHlR4enKw5TcirWv02dzqhhIoY=" />
+</div>
+
+<div>
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="73161BEC" />
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAMZrfKCesDFUfthkdHjxm2uhrXikXGnbwGgyKls5r85a+x9KdiqBny7rLN/xY5V5fydWLJJLhixTwRQkDzAwsb16RwW/fBYQnjst8LpNKu8Tg==" />
+</div>
+            <input type="hidden" name="hdnWindowId" id="hdnWindowId" />
+            <div id="navDiv" class="row">
+                <header>
+                    <nav class="navbar navbar-default game-player-nav" style="border-radius: 0">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <div class="pull-left msnlogo">
+                                    <a href="//zone.msn.com" target="_blank">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <img class="msnlogo-img" src="//zone.msn.com/images/v12/en-us/msnlanding2014/butterfly-wht.png" alt="MSN Logo">
+                                                </td>
+                                                <td>
+                                                    <label class="msnlogo-text">msn games</label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                                <a class="navbar-brand pull-left" href="#" style="display: none;">
+                                    <img id="ImageSiteLogo" />
+								</a>
+                                <ul class="nav navbar-nav navbar-right pull-right">
+                                    <li>
+                                        <a href="javascript:void(0)" id="fullscreeniframe">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <span style="display: none" title="Window-Screen" class="glyphicon glyphicon-modal-window"></span>
+                                                        <span title="Full-Screen" class="glyphicon glyphicon-fullscreen"></span>
+                                                    </td>
+                                                    <td>
+                                                        <label style="display: none" class="icon-label">&nbsp;&nbsp;Window Screen</label>
+                                                        <label class="icon-label">&nbsp;&nbsp;Full Screen</label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </li>
+                                    <li class="GameControlsPause">
+                                        <a href="#" id="GameControlsPause" onclick="GamePause()">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <span id="ImgPlay" title="Play" style="display: none" class="glyphicon glyphicon-play"></span>
+                                                        <span id="ImgPause" title="Pause" class="glyphicon glyphicon-pause"></span>
+                                                    </td>
+                                                    <td>
+                                                        <label id="lblPlay" style="display: none" class="icon-label">&nbsp;&nbsp;Play</label>
+                                                        <label id="lblPause" class="icon-label">&nbsp;&nbsp;Pause</label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </li>
+                                    <li class="GameControlsMute">
+                                        <a href="#" id="GameControlsMute" onclick="GameMute()">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <span id="ImgVolume" title="Volume" class="glyphicon glyphicon-volume-up"></span>
+                                                        <span id="ImgMute" title="Mute" style="display: none" class="glyphicon glyphicon-volume-off"></span>
+                                                    </td>
+                                                    <td>
+                                                        <label class="icon-label">&nbsp;&nbsp;Volume</label>
+                                                        <label style="display: none" class="icon-label">&nbsp;&nbsp;Mute</label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </li>
+                                    <li class="GameControlsLplay">
+                                        <a href="#" id="GameControlsLplay" onclick="Lplay()" target="_blank" title="Learn To play">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <span class="glyphicon glyphicon-info-sign"></span>
+                                                    </td>
+                                                    <td>
+                                                        <label class="icon-label">&nbsp;&nbsp;Learn To play</label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </li>
+                                    <li class="GameControlsQuit">
+                                        <a href="#" id="GameControlsQuit" onclick="GameQuit()" title="Quit">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <span class="glyphicon glyphicon-off"></span>
+                                                    </td>
+                                                    <td>
+                                                        <label class="icon-label">&nbsp;&nbsp;Quit</label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <input type="hidden" name="hdnBckImgPath" id="hdnBckImgPath" />
+            </div>
+            <div class="row">
+                <div id="game-player-block" class="col-xs-12 game-player-block">
+                    <div id="leftSidePanel">
+                        <img src="//zone.msn.com/images/v9/en-us/game/msso/Solitaire_GameLogo_350x210_v1.png" id="GameLogoImage" class="img-responsive" alt="Microsoft Solitaire Collection Game Logo" />
+                        <div id="gameBlurb">
+                            <span id="lblGamePromoTxt" style="font-size:11pt;">The best solitaire experience to date, the Microsoft Solitaire Collection is five different card games in one.</span>
+                        </div>
+                            <div id="leftRectangleAdContainer">
+                                <DIV id="Ztv2" class="SuperBannerTV" ><DIV class="SuperBannerTV_adbor"><IFRAME SRC="//zone.msn.com/en/utility/ZTVRefreshProxy.aspx?ProxyPath=/en/mssolitairecollection/game&RefreshRate=20&ZID=gameSide300&" SCROLLING="no" MARGINHEIGHT="0" MARGINWIDTH="0" width="300" height="600" BORDER="0" FRAMEBORDER="0"></IFRAME><DIV class="SuperBannerTV_tag"><a href="http://g.msn.com/AIPRIV/en-us" target="_blank"><img src="//zone.msn.com/images/v12/en-us/ad_choices.png" border="0" title="Ad Choices" alt="Advertisement Choices" /></a></DIV></DIV></DIV>
+                            </div>
+                        <table>
+                            <tr>
+                                <td id="DownloadBlip" align="left" style="display:none;visibility:hidden;">
+                                    <table id="DwnLdBlipTbl">
+                                        <tr>
+                                            <td style="padding-top: 4px;">
+                                                <a href="#" id="DownloadUpsellImgLink" style="padding-right: 9px;" class="UpsellLink" target="_blank">
+                                                    <img src="//zone.msn.com/images/v9/en-us/spgplayer2/dlicon_leftcol.jpg" id="DownloadUpsellImage" />
+                                                </a>
+                                            </td>
+                                            <td style="vertical-align: text-bottom; padding-bottom: 4px">
+                                                <a href="#" id="DownloadUpsellLink" class="UpsellLinkLarge" target="_blank"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <span id="DeluxeDownloadSubText" class="LeftPaneWelcomeText"></span>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="rightPane">
+                        <div class="embed-responsive  embed-responsive-16by9" id="GameFrameContainer">
+                            <div id="GameLoadingIndicator">
+                                <div class="LoadingGraphic">
+                                    <img src="//zone.msn.com/images/v12/en-us/msnlanding2014/butterfly-wht.png" alt="" />
+                                </div>
+                                <label class="LoadingText">Loading...</label>
+                            </div>
+
+                            <iframe id="GameFramePlugIn" class="embed-responsive-item" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                        </div>
+                        <div id="GameOverContainer" style="display: none; position: relative">
+                            <iframe id="GameOverFrame" name="GameOverFrame" src="" class="embed-responsive-item" frameborder="0" style="display: none; width: 728px"></iframe>
+                        </div>
+                        <div id=lowerBannerAdContainer>
+                            <DIV id="theSuperBanner1" class="SuperBannerTV" ><DIV class="SuperBannerTV_adbor"><IFRAME SRC="//zone.msn.com/en/utility/ZTVRefreshProxy.aspx?ProxyPath=/en/mssolitairecollection/game&RefreshRate=20&ZID=gameSuperBannerTV1&" SCROLLING="no" MARGINHEIGHT="0" MARGINWIDTH="0" width="728" height="90" BORDER="0" FRAMEBORDER="0"></IFRAME><DIV class="SuperBannerTV_tag"><a href="http://g.msn.com/AIPRIV/en-us" target="_blank"><img src="//zone.msn.com/images/v12/en-us/ad_choices.png" border="0" title="Ad Choices" alt="Advertisement Choices" /></a></DIV></DIV></DIV>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <form id="ScoreSubmit" action="GameOver.aspx" method="post" target="GameOverFrame">
+        <input id="game" name="game" type="hidden" />
+        <input id="instance" name="instance" type="hidden" />
+        <input id="windowId" name="w" type="hidden" />
+        <input id="score" name="score" type="hidden" />
+        <input id="gameResultsXml" name="gameResultsXml" type="hidden" />
+    </form>
+    <script type="text/javascript">
+        var zoneAdvertisingDefaultRefreshMilliseconds = 20000;
+        var zoneAdvertisingMinimumIntersectionRatioFooter = 0.51;
+        var zoneAdvertisingMinimumIntersectionRatioSide = 0.21;
+        var zoneAdvertisingIntersectionRatioFooter = 1.0;
+        var zoneAdvertisingIntersectionRatioSide = 1.0;
+        var zoneAdvertisingIntersectionObserverFooter = null;
+        var zoneAdvertisingIntersectionObserverSide = null;
+        var zoneAdvertisingLastRefreshInstantFooter = Date.now();
+        var zoneAdvertisingLastRefreshInstantSide = Date.now() - (60 * 60 * 1000);
+        var zoneAdvertisingRefreshHandlerFooter = null;
+        var zoneAdvertisingRefreshHandlerSide = null;
+        var zoneFeatureAvailablePageVisibility = typeof(document.visibilityState) !== 'undefined';
+        var zoneFooterDisplayAdFrameUri = null;
+        var zoneGamePlayerPageVisible = true;
+        var zoneSideDisplayAdFrameUri = null;
+
+        function zoneAdvertisingRefreshCallbackFooter() {
+            if (zoneAdvertisingRefreshHandlerFooter !== null) {
+                clearInterval(zoneAdvertisingRefreshHandlerFooter);
+            }
+
+            var advertisingFooterFrame = zoneGetAdvertisingFooterFrame();
+            if (advertisingFooterFrame === null) {
+                zoneConsoleDebugLog(
+                    "DisplayAd: Deferring footer display advertising refresh for one second due to missing frame.");
+                zoneAdvertisingRefreshHandlerFooter = window.setInterval(zoneAdvertisingRefreshHandlerFooter, 1000);
+            } else {
+                var nextRefreshMilliseconds = zoneGetAdvertisingFooterFrameRefreshRateMilliseconds();
+                zoneConsoleDebugLog("DisplayAd: Refreshing footer display advertising and queueing again in " +
+                    nextRefreshMilliseconds + " milliseconds.");
+                zoneAdvertisingRefreshHandlerFooter = window.setInterval(
+                    zoneAdvertisingRefreshCallbackFooter,
+                    nextRefreshMilliseconds);
+                zoneAdvertisingLastRefreshInstantFooter = Date.now();
+                if (typeof(IntersectionObserver) === 'undefined'? checkAdvertisementInView(advertisingFooterFrame) : true
+                    && zoneFooterDisplayAdFrameUri !== null) {
+                    advertisingFooterFrame.src = zoneFooterDisplayAdFrameUri;
+                }
+            }
+        }
+
+        function zoneAdvertisingRefreshCallbackSide() {
+            if (zoneAdvertisingRefreshHandlerSide !== null) {
+                clearInterval(zoneAdvertisingRefreshHandlerSide);
+            }
+
+
+            var advertisingSideFrame = zoneGetAdvertisingSideFrame();
+            if (advertisingSideFrame === null) {
+                zoneConsoleDebugLog(
+                    "DisplayAd: Deferring side display advertising refresh for one second due to missing frame.");
+                zoneAdvertisingRefreshHandlerSide = window.setInterval(zoneAdvertisingRefreshHandlerSide, 1000);
+            } else {
+                var nextRefreshMilliseconds = zoneGetAdvertisingFooterFrameRefreshRateMilliseconds();
+                zoneConsoleDebugLog("DisplayAd: Refreshing side display advertising and queueing again in " +
+                    nextRefreshMilliseconds + " milliseconds.");
+                zoneAdvertisingRefreshHandlerSide = window.setInterval(
+                    zoneAdvertisingRefreshCallbackSide,
+                    nextRefreshMilliseconds);
+                zoneAdvertisingLastRefreshInstantSide = Date.now();
+                if (typeof(IntersectionObserver) === 'undefined'? checkAdvertisementInView(advertisingSideFrame) : true
+                    && zoneFooterDisplayAdFrameUri !== null) {
+                    advertisingSideFrame.src = zoneSideDisplayAdFrameUri;
+                }
+            }
+        }
+
+        function zoneConsoleDebugLog(message) {
+            var enableConsoleDebugLogging = false;
+            if (enableConsoleDebugLogging) {
+                console.log("Zones: " + message);
+            }
+        }
+
+        function zoneDocumentReady() {
+            var advertisingElementFooter = zoneGetAdvertisingFooterFrame();
+            if (advertisingElementFooter !== null) {
+                zoneFooterDisplayAdFrameUri = advertisingElementFooter.src;
+            }
+
+            var advertisingElementSide = zoneGetAdvertisingSideFrame();
+            if (advertisingElementSide !== null) {
+                zoneSideDisplayAdFrameUri = advertisingElementSide.src;
+            }
+
+            if (typeof(IntersectionObserver) !== 'undefined') {
+                if (advertisingElementFooter !== null) {
+                    zoneAdvertisingIntersectionObserverFooter = new IntersectionObserver(
+                        zoneIntersectionChangeCallback,
+                        { threshold: zoneAdvertisingMinimumIntersectionRatioFooter });
+                    zoneAdvertisingIntersectionObserverFooter.observe(advertisingElementFooter);
+                }
+
+                // The side element can be filled with 300x250 or 300x600.  The cheapest reliable way to do
+                // viewability is therefore to adjust the threshold to 250/600/2, or 21%, instead of 50%.
+                var advertisingElementSide = zoneGetAdvertisingSideFrame();
+                if (advertisingElementSide !== null) {
+                    zoneAdvertisingIntersectionObserverSide = new IntersectionObserver(
+                        zoneIntersectionChangeCallback,
+                        { threshold: zoneAdvertisingMinimumIntersectionRatioSide });
+                    zoneAdvertisingIntersectionObserverSide.observe(advertisingElementSide);
+                }
+            }
+
+            if (zoneFeatureAvailablePageVisibility) {
+                document.addEventListener("visibilitychange", zoneVisibilityChangeCallback);
+                zoneVisibilityChangeCallback();
+            }
+            else {
+                zoneEvaluateDisplayAdvertisingRefresh();
+            }
+
+            window.addEventListener("unload", zoneUnloadCallback);
+        }
+
+        function zoneEvaluateDisplayAdvertisingRefresh() {
+            var enableFooterRefresh =
+                zoneAdvertisingIntersectionRatioFooter >= zoneAdvertisingMinimumIntersectionRatioFooter &&
+                zoneGamePlayerPageVisible;
+            if (enableFooterRefresh && zoneAdvertisingRefreshHandlerFooter === null) {
+                var nextRefreshMilliseconds = zoneAdvertisingLastRefreshInstantFooter +
+                    zoneGetAdvertisingFooterFrameRefreshRateMilliseconds() - Date.now();
+                if (nextRefreshMilliseconds < 1000) {
+                    zoneConsoleDebugLog("DisplayAd: Enabling footer display advertising refresh and firing now as " +
+                        "imminent or past due.");
+                    zoneAdvertisingRefreshCallbackFooter();
+                }
+                else {
+                    zoneConsoleDebugLog("DisplayAd: Enabling footer display advertising refresh and queueing in " +
+                        nextRefreshMilliseconds + " milliseconds.");
+                    zoneAdvertisingRefreshHandlerFooter = window.setInterval(
+                        zoneAdvertisingRefreshCallbackFooter,
+                        nextRefreshMilliseconds);
+                }
+            }
+            else if (!enableFooterRefresh && zoneAdvertisingRefreshHandlerFooter !== null) {
+                zoneConsoleDebugLog("DisplayAd: Disabling footer display advertising refresh.");
+                clearInterval(zoneAdvertisingRefreshHandlerFooter);
+                zoneAdvertisingRefreshHandlerFooter = null;
+            }
+
+            var enableSideRefresh =
+                zoneAdvertisingIntersectionRatioSide >= zoneAdvertisingMinimumIntersectionRatioSide &&
+                zoneGamePlayerPageVisible;
+            if (enableSideRefresh && zoneAdvertisingRefreshHandlerSide === null) {
+                var nextRefreshMilliseconds = zoneAdvertisingLastRefreshInstantSide +
+                    zoneGetAdvertisingFooterFrameRefreshRateMilliseconds() - Date.now();
+                if (nextRefreshMilliseconds < 1000) {
+                    zoneConsoleDebugLog("DisplayAd: Enabling side display advertising refresh and firing now as " +
+                        "imminent or past due.");
+                    zoneAdvertisingRefreshCallbackSide();
+                }
+                else {
+                    zoneConsoleDebugLog("DisplayAd: Enabling side display advertising refresh and queueing in " +
+                        nextRefreshMilliseconds + " milliseconds.");
+                    zoneAdvertisingRefreshHandlerSide = window.setInterval(
+                        zoneAdvertisingRefreshCallbackSide,
+                        nextRefreshMilliseconds);
+                }
+            }
+            else if (!enableSideRefresh && zoneAdvertisingRefreshHandlerSide !== null) {
+                zoneConsoleDebugLog("DisplayAd: Disabling side display advertising refresh.");
+                clearInterval(zoneAdvertisingRefreshHandlerSide);
+                zoneAdvertisingRefreshHandlerSide = null;
+            }
+        }
+
+        function zoneGetAdvertisingFooterFrame() {
+            var advertisingFrame = document.querySelector("#lowerBannerAdContainer iframe:first-child");
+            if (advertisingFrame === null) {
+                zoneConsoleDebugLog(
+                    "DisplayAd: Footer display advertising frame missing, this should not be possible.");
+            }
+
+            return advertisingFrame;
+        }
+
+        function zoneGetAdvertisingSideFrame() {
+            var advertisingFrame = document.querySelector("#leftRectangleAdContainer iframe:first-child");
+            if (advertisingFrame === null) {
+                zoneConsoleDebugLog(
+                    "DisplayAd: Side display advertising frame missing, this should not be possible.");
+            }
+
+            return advertisingFrame;
+        }
+
+        function zoneGetAdvertisingSideFrameGameCode() {
+            var gameCode = zoneGetURIQueryParameterValue(window.location.href, "game");
+            if (gameCode === null) {
+                zoneConsoleDebugLog("DisplayAd: Game code cannot be parsed, using default.");
+
+                gameCode = "";
+            }
+
+            return gameCode;
+        }
+
+        function zoneGetAdvertisingFooterFrameRefreshRateMilliseconds() {
+            var advertisingFrame = zoneGetAdvertisingFooterFrame();
+            if (advertisingFrame === null) {
+                zoneConsoleDebugLog(
+                    "DisplayAd: Footer display advertising frame cannot be found, using default.");
+
+                return zoneAdvertisingDefaultRefreshMilliseconds;
+            }
+
+            var candidateValue = parseInt(zoneGetURIQueryParameterValue(advertisingFrame.src, "refreshrate"));
+            if (candidateValue === NaN) {
+                zoneConsoleDebugLog(
+                    "DisplayAd: Footer display advertising refresh rate cannot be parsed, using default.");
+
+                return zoneAdvertisingDefaultRefreshMilliseconds;
+            }
+
+            return candidateValue * 1000;
+        }
+
+        function zoneGetURIQueryParameterValue(uri, parameterName) {
+            var nameQuery = uri.split("?", 2);
+            if (nameQuery.length === 2) {
+                var queryKeyValues = nameQuery[1].split("&");
+                for (var queryOffset = 0; queryOffset < queryKeyValues.length; queryOffset++) {
+                    var keyValue = queryKeyValues[queryOffset].split("=", 2);
+                    if (keyValue.length === 2 &&
+                        keyValue[0] !== null &&
+                        typeof(keyValue[0]) !== 'undefined' &&
+                        keyValue[0].toLowerCase() === parameterName) {
+                            return keyValue[1];
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        function zoneIntersectionChangeCallback(entries, observer) {
+            var advertisingElementFooter = zoneGetAdvertisingFooterFrame();
+            var advertisingElementSide = zoneGetAdvertisingSideFrame();
+            if (advertisingElementFooter === null && advertisingElementSide === null) {
+                return;
+            }
+
+            for (var entriesOffset = 0; entriesOffset < entries.length; entriesOffset++) {
+                var entry = entries[entriesOffset];
+                if (advertisingElementFooter === entry.target) {
+                    zoneAdvertisingIntersectionRatioFooter = entry.intersectionRatio;
+                    zoneConsoleDebugLog("DisplayAd: Footer display advertising element intersection ratio now " +
+                        zoneAdvertisingIntersectionRatioFooter);
+                }
+                else if (advertisingElementSide === entry.target) {
+                    zoneAdvertisingIntersectionRatioSide = entry.intersectionRatio;
+                    zoneConsoleDebugLog("DisplayAd: Side display advertising element intersection ratio now " +
+                        zoneAdvertisingIntersectionRatioSide);
+                }
+                else {
+                    zoneConsoleDebugLog("DisplayAd: Intersection callback received for something other than " +
+                        "display advertising elements, this should not be possible.");
+                }
+            }
+
+            return zoneEvaluateDisplayAdvertisingRefresh();
+        }
+
+        function zoneUnloadCallback() {
+            if (zoneAdvertisingRefreshHandlerFooter !== null) {
+                clearInterval(zoneAdvertisingRefreshHandlerFooter);
+                zoneAdvertisingRefreshHandlerFooter = null;
+            }
+
+            if (zoneAdvertisingRefreshHandlerSide !== null) {
+                clearInterval(zoneAdvertisingRefreshHandlerSide);
+                zoneAdvertisingRefreshHandlerSide = null;
+            }
+
+            window.removeEventListener("unload", zoneUnloadCallback);
+            if (zoneAdvertisingIntersectionObserverSide !== null) {
+                zoneAdvertisingIntersectionObserverSide.disconnect();
+                zoneAdvertisingIntersectionObserverSide = null;
+            }
+
+            window.removeEventListener("unload", zoneUnloadCallback);
+            if (zoneAdvertisingIntersectionObserverFooter !== null) {
+                zoneAdvertisingIntersectionObserverFooter.disconnect();
+                zoneAdvertisingIntersectionObserverFooter = null;
+            }
+
+            if (zoneFeatureAvailablePageVisibility) {
+                document.removeEventListener("visibilitychange", zoneVisibilityChangeCallback);
+            }
+        }
+
+        function zoneVisibilityChangeCallback() {
+            zoneGamePlayerPageVisible = document.visibilityState === "visible";
+            zoneConsoleDebugLog("DisplayAd: Gameplay page visibility now " + zoneGamePlayerPageVisible + ".");
+            zoneEvaluateDisplayAdvertisingRefresh();
+        }
+
+        $(function () {
+            zoneDocumentReady();
+
+        });
+
+        function checkAdvertisementInView(advertisement) {
+            var adBoundingBox = advertisement.getBoundingClientRect();
+            var adRightBound = adBoundingBox.left + adBoundingBox.width;
+            var adBottomBound = adBoundingBox.top + adBoundingBox.height;
+            var adArea = adBoundingBox.width * adBoundingBox.height;
+            var deltaWidth = adRightBound - window.innerWidth;
+            var deltaHeight = adBottomBound - window.innerHeight;
+            var visibleWidth = deltaWidth < 0 ? adBoundingBox.width : adBoundingBox.width - deltaWidth;
+            var visibleHeight = deltaHeight < 0 ? adBoundingBox.height : adBoundingBox.height - deltaHeight;
+            return (visibleWidth * visibleHeight / adArea) >= 0.51;
+        }
+    </script>
+
+    <script type="text/javascript">
+        var img = $('#hdnBckImgPath').val();
+        if (img != '') {
+            document.body.style.background = "";
+            document.body.style.backgroundImage = "none";
+            document.body.style.backgroundColor = "transparent";
+
+            var list = document.getElementsByTagName("html");
+            var temp = 'url(' + img + ') no-repeat center fixed';
+            list[0].style.background = temp;
+            list[0].style.backgroundSize = 'cover';
+        }
+    </script>
+    <!-- REMOVED -->
+    <!--<script language="javascript">LoadAnalyticsScriptOnFooter();</script>-->
+    <style>
+            #leftRectangleAdContainer > .SuperBannerTV > .SuperBannerTV_adbor > .SuperBannerTV_tag {
+                display: none;
+            }
+    </style>
+</body>
+</html>

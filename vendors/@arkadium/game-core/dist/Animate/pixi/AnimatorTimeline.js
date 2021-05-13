@@ -1,0 +1,7 @@
+"use strict";
+/*!@license
+ * Copyright (c) Arkadium Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Denis Gusarov <denis.gusarov@arkadium.com>
+ */Object.defineProperty(exports,"__esModule",{value:!0});var Animator_1=require("./Animator"),pool=[],AnimatorTimeline=function(){function s(){this._update=this.update.bind(this),this.init(null,0,0,!1,null)}return s.prototype.init=function(t,e,i,n,o){this.instance=t,this.loop=n,this.start=e,this.end=i,this.callback=o,t&&(t.gotoAndStop(e),t._beforeUpdate=this._update)},s.prototype.destroy=function(){this.instance._beforeUpdate=null,this.init(null,0,0,!1,null),s._pool.push(this)},s.prototype.update=function(t){var e;return t.currentFrame>=this.end&&(t.currentFrame=this.end,this.loop?(t._updateTimeline(),t.gotoAndPlay(this.start)):(t.stop(),this.callback&&(e=this.callback),this.stop())),e},s.prototype.stop=function(){Animator_1.Animator._internalStop(this)},Object.defineProperty(s.prototype,"progress",{get:function(){var t=(this.instance.currentFrame-this.start)/(this.end-this.start);return Math.max(0,Math.min(1,t))},enumerable:!0,configurable:!0}),Object.defineProperty(s,"_pool",{get:function(){return pool},enumerable:!0,configurable:!0}),s.create=function(t,e,i,n,o){var r;return(r=this._pool.length?this._pool.pop():new s).init(t,e,i,n,o),r},s}();exports.AnimatorTimeline=AnimatorTimeline;

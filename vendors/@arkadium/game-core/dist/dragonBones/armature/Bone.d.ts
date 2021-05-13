@@ -1,0 +1,32 @@
+import { TransformObject } from "./TransformObject";
+import { OffsetMode } from "../core/DragonBones";
+import { Transform } from "../geom/Transform";
+import { BoneData } from "../model/ArmatureData";
+import { Armature } from "./Armature";
+export declare class Bone extends TransformObject {
+    static toString(): string;
+    offsetMode: OffsetMode;
+    readonly animationPose: Transform;
+    _transformDirty: boolean;
+    _childrenTransformDirty: boolean;
+    protected _localDirty: boolean;
+    _hasConstraint: boolean;
+    protected _visible: boolean;
+    protected _cachedFrameIndex: number;
+    _boneData: BoneData;
+    protected _parent: Bone | null;
+    _cachedFrameIndices: Array<number> | null;
+    protected _onClear(): void;
+    protected _updateGlobalTransformMatrix(isCache: boolean): void;
+    _updateAlpha(): void;
+    init(boneData: BoneData, armatureValue: Armature): void;
+    update(cacheFrameIndex: number): void;
+    updateByConstraint(): void;
+    invalidUpdate(): void;
+    contains(value: Bone): boolean;
+    get boneData(): BoneData;
+    get visible(): boolean;
+    set visible(value: boolean);
+    get name(): string;
+    get parent(): Bone | null;
+}

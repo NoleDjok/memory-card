@@ -1,0 +1,2558 @@
+{
+    "config": {
+        "feed": {
+            "feedName": "dev2-testing",
+            "promoGame": null,
+            "sorting": "MSN",
+            "gamesRewrite": {"dailyCommuter-daily-crossword": "commuter-crossword"}
+        },
+        "tags": [
+            {
+                "visible": true,
+                "name": "word"
+            },
+            {
+                "visible": true,
+                "name": "card"
+            },
+            {
+                "visible": true,
+                "name": "puzzles"
+            },
+            {
+                "visible": true,
+                "name": "casino"
+            },
+            {
+                "visible": true,
+                "name": "arcade"
+            }
+        ],
+        "theme": {
+            "name": "msn",
+            "nameAlias": null,
+            "slug": "theme-wp",
+            "clientHomePageUrl": "https://www.lavanguardia.com/",
+            "domain": "http://arenax-dev2.arkadium.com/",
+            "logoPath": "https://www.lavanguardia.com/rsc/images/lv-logo.svg",
+            "locale": "en",
+            "iconSprite": "",
+            "headerBgColorHex": "",
+            "headerTextColorHex": "",
+            "arenaClient": "Customer",
+            "client": "lavanguardia",
+            "clientStyleURI": "",
+            "clientStyles": "https://arenaxstorage.blob.core.windows.net/arena-headers/css/clients/lavanguardia/lavanguardia.css",
+            "useGeoIp": false,
+            "hasChallenges": false,
+            "hasLeaderboard": true,
+            "ads": {
+                "GAME_HEADER": true,
+                "GAME_SIDEBAR": true,
+                "GAME_VIDEO_PREROLL": true,
+                "WALL_TILE": true,
+                "WALL_DISPLAY": true,
+                "DisableVideo": {
+                    "preroll": []
+                }
+            }
+        },
+        "ad": {
+            "product": null,
+            "adUnitAlias": null
+        },
+        "analytics": {
+            "account": "UA-110297256-6",
+            "additionalAccounts": [
+                {
+                    "provider": "ga",
+                    "account": "UA-53524189-1",
+                    "prefix": "metroAcc"
+                }
+            ]
+        },
+        "categories": {
+            "homeCategories": [
+                {
+                    "name": "daily"
+                },
+                {
+                    "name": "word"
+                },
+                {
+                    "name": "card"
+                },
+                {
+                    "name": "puzzles"
+                }
+            ],
+            "allCategories": [
+                "daily",
+                "word",
+                "card",
+                "puzzles",
+                "casino",
+                "arcade"
+            ]
+        }
+    },
+    "text": {
+        "AD_CAPTURE": "Advertisement",
+        "CLICK_HERE_TO_SEARCH": "Click here to search...",
+        "GAMES_LOGIN": "Games Login",
+        "DAILY": "daily",
+        "MAHJONGG": "mahjongg",
+        "WORD": "word",
+        "SOLITAIRE": "solitaire",
+        "CARD": "card",
+        "CASINO": "casino",
+        "BRAIN": "brain",
+        "MATCHING": "matching",
+        "RELAXING": "relaxing",
+        "EXCITING": "exciting",
+        "SPEED": "speed",
+        "PUZZLES": "puzzles",
+        "ARCADE": "arcade",
+        "CROSSWORD": "crossword",
+        "GAMES": "Games",
+        "PLAY_NOW": "Play Now",
+        "WORKOUT": "Today's Brain Workout",
+        "EXERCISE": "Exercise your brain with some mental aerobics! These five different games are specially designed to keep your mind active and in shape. Come back every day for a different set of games!",
+        "START_NOW": "Start Now",
+        "NEXT_WORKOUT": "Next Workout available in",
+        "BOTTOM_META_BLOCK_TITLE": "About {{name}} Free Games Custom",
+        "BOTTOM_META_BLOCK_DESC": "Instantly play your favorite free online games including card games, puzzles, brain games & dozens of others, brought to you by {{name}} custom",
+        "ARENA_META_DESC": "Instantly play your favorite free online games including card games, puzzles, brain games & dozens of others, brought to you by {{name}} Custom",
+        "GAME_WILL_BEGIN": "Game will begin after the following advertisement",
+        "PLAYERS_ALSO_LIKE": "players also like",
+        "PROFILE": "Profile",
+        "RANK": "Rank",
+        "COUNTRY": "Country",
+        "NAME": "Name",
+        "SCORE": "Score",
+        "SHOW_MORE": "Show More",
+        "CANCEL": "Cancel",
+        "SAVE": "Save",
+        "BACK_TO_HOMEPAGE": "Back to homepage",
+        "TODAY": "Today",
+        "THIS WEEK": "This Week",
+        "THIS MONTH": "This Month",
+        "ALL TIME": "All Time",
+        "TOP_SCORES": "Top Scores",
+        "LOG_IN": "Login",
+        "LOG_OUT": "Log out",
+        "TITLE_GAME_PAGE": "Custom {{gameName}} - Free Online Game {{name}} cust",
+        "WORKOUT_COMPLETE": "Workout Complete!",
+        "WORKOUT_COMPLETED": "Workout Completed!",
+        "NOT_FOUND": "Not Found",
+        "LOG_IN_TO_BENEFITS": "Log in to {{name}} Games for these benefits:",
+        "TRACK_YOUR_HIGH_SCORES": "- Track your high scores for every game",
+        "SAVE_HIGH_SCORE": "- Save high score data securely",
+        "META_TITLE_GAME_PAGE": "Free Online Game custom",
+        "DID_NOT_HAVE_ANY_MATCHES": "Sorry, your search for \"{{term}}\" did not have any matches.",
+        "YOU_CAN_SEARCH_OUR_GAMES": "Please try again - you can search our games by title, tag or description.",
+        "HIGHSCORE": "HIGHSCORE",
+        "MORE_GAMES": "More Games",
+        "YOUR_HIGH_SCORE": "Your High Score",
+        "LOG_IN_TO_SAVE_SCORES": "Log in to save scores",
+        "PLAY_AGAIN": "Play Again",
+        "PLAY_NEXT": "Play Next",
+        "PLAYERS_ALSO_ENJOY": "Players also enjoy",
+        "CHANGE": "Change",
+        "GAME_SIZE": "Game Size",
+        "NO_HIGHSCORE_FOR_PERIOD": "There are no highscores for this period",
+        "LOG_IN_TO_SAVE_YOUR_SCORES": "Log in to save your scores",
+        "PUZZLES_AND_GAMES": "Puzzles & Games",
+        "CHANGE_PROFILE_IMG": "Change Profile Image",
+        "LOCATION_TITLE": "Location",
+        "ENTER_ZIP_CODE": "Enter ZIP code here",
+        "ACHIEVEMENTS_TITLE": "Latest Achievements",
+        "NUM_FIRST": "1st",
+        "NUM_SECOND": "2nd",
+        "NUM_THIRD": "3rd",
+        "ACHIEVED_SCORE": "<b>{{name}}</b> just posted a score of <span>{{score}}</span> points while playing <a href='{{gameUrl}}'>{{gameName}}</a>!",
+        "ACHIEVED_LEADERBOARD_PLACE": "<b>{{name}}</b> just posted a score of <span>{{score}}</span> points while playing <a href='{{gameUrl}}'>{{gameName}}</a> and is now in <b>{{place}} place on the leaderboard!</b>",
+        "TITLE_WALL": "Play Free Online Games | Free Games {{name}} Custom",
+        "NEW": "New",
+        "ALL_GAMES": "All Games",
+        "COOKIE_TEXT": "By using this site, you agree to Arkadium’s <a href='{{link}}' target='_blank'>Privacy Policy</a> and Cookie Policy.",
+        "CONTACT_US_BTN": "Contact Arkadium",
+        "PRIVACY_BTN": "Privacy Policy",
+        "COOKIE_ACCEPT": "Accept",
+        "TEXT_VIEW_MORE": "See More Games",
+        "NO_ACHIEVMENTS_MESSAGE": "Play games to get achievements",
+        "GAME_END_ZERO_HEADER": "Play more to improve your score",
+        "GAME_END_SAVE_NEW_HIGHSCORE": "Congratulations! Save your new high score now!",
+        "GAME_END_NEAR_TOP": "Congratulations, you’re near top of the leaderboard!",
+        "GAME_END_GREATE_JOB": "Great job! You beat {{count}} players on the leaderboard!",
+        "GAME_END_NEW_HIGHSCORE": {
+            "MAIN": "Congratulations! You have the ",
+            "ATTENTION": "NEW HIGH SCORE!"
+        },
+        "GREETINGS_HEADER": {
+            "FIRST": "You can always save and track your scores while you're logged in! Visit your",
+            "SECOND": "profile page",
+            "THIRD": " to edit your details."
+        },
+        "WELCOME": "Welcome",
+        "PLAYER": "Player",
+        "GAME_END_YOU": "You",
+        "YOUR_NEW_HIGHSCORE": "YOUR NEW HIGHSCORE!",
+        "GAME_END_USER_FIRST": "Today's 1st Place Score!",
+        "GAME_END_USER_SECOND": "Today's 2nd Place Score!",
+        "GAME_END_USER_THIRD": "Today's 3rd Place Score!",
+        "GAME_END_LOGIN_FIRST_PLACE": "Log In via Facebook or Google to save your 1st place!",
+        "GAME_END_LOGIN_SECOND_PLACE": "Log In via Facebook or Google to save your 2nd place!",
+        "GAME_END_LOGIN_THIRD_PLACE": "Log In via Facebook or Google to save your 3rd place!",
+        "GAME_END_LOGIN_NEW_HIGHSCORE": "Log In via Facebook or Google to save your new highscore!",
+        "GAME_END_LOGIN_SCORE": "Log In via Facebook or Google to save your score!",
+        "GAME_END_LOGIN_LEVEL_TEXT": "to earn coins and save your score to leaderboard!",
+        "LEVEL": "Level",
+        "LEVEL_UP": "Level Up!",
+        "XP": "XP",
+        "POINTS": "Points",
+        "COINS_EARNED": "<span>{{num}}</span> coins earned",
+        "XP_EXPLAINED": "You’ve just earned <span>{{xpGained}}</span> experience points! Earn <span>{{xpLeftToEarn}}</span> points more to level up!",
+        "CURRENT_XP_TEXT": "Current <br/> experience points",
+        "NEXT_XP_TEXT": "Experience points needed to achieve next <span>level {{levelNum}}</span>",
+        "XP_LOADER_TEXT": "Calculating your progress...",
+        "CATEGORIES_TITLES": {
+            "DAILY": "Daily Games",
+            "CARD": "Card Games",
+            "WORD": "Word Games",
+            "PUZZLES": "Puzzles",
+            "CASINO": "Casino Collection",
+            "SOLITAIRE": "Solitaire Collection",
+            "CROSSWORD": "Crossword Collection",
+            "ARCADE": "Arcade Games",
+            "SUDOKU": "Sudoku Collection",
+            "MAHJONGG": "Mahjongg Collection",
+            "OTHER": "More Games"
+        },
+        "SEO_TITLE_CATEGORY": "Free Online {{category}} | Play for Free custom",
+        "GUEST": "Guest",
+        "NO_SCORE_MATRIX_ERROR": "This game doesn't support progress points yet. Check back soon!",
+        "HOME": "Games home",
+        "RECENTLY_PLAYED": "Recently Played",
+        "INFO_TOOLTIP": {
+            "USER_NAME": "This is your nickname that will be shown publicly to other players in leaderboards.",
+            "LOCATION": "Choose your location to show your country’s flag next to your name in leaderboards.",
+            "COINS": "You earn coins each time you finish playing a game. Coins are rewarded as a portion of your score. Redeem your coins for brand new avatars!",
+            "XP": "You earn experience points (XP) each time you finish playing a game. XP is rewarded as a portion of your score. <br> So far, you’ve earned {{earnedXp}} XP since your last level-up. <br> You need {{needXp}} more XP to reach Level {{nextLevel}}!"
+        },
+        "COINS": "coins",
+        "BUY_FOR": "Buy for {{ coins }} coins",
+        "CHANGE_PROFILE_IMAGE": "Change Profile Image",
+        "HUMANS_AVATARS": "HUMANS",
+        "ANIMALS_AVATARS": "ANIMALS",
+        "OBJECTS_AVATARS": "OBJECTS",
+        "GAMES_AVATARS": "GAMES",
+        "REDEEM": "Redeem",
+        "LVL": "LVL",
+        "AVATAR_LOCK_DESC": "Unlock at LVL {{number}}",
+        "CHANGE_PROFILE_PASSWORD": "change password",
+        "PLEASE_ENTER_PASSWORD": "Please enter a password.",
+        "MUST_CONTAIN_SIX_CHARACTERS": "Password must contain at least six characters.",
+        "PASSWORDS_DO_NOT_MATCH": "Passwords do not match.",
+        "ERROR_CODE_205": "Incorrect current password.",
+        "CURRENT_PASSWORD": "Current Password",
+        "NEW_PASSWORD": "New Password",
+        "CONFIRM_NEW_PASSWORD": "Confirm New Password",
+        "UPDATE": "Update",
+        "HELP_PAGE_LINK": "Help",
+        "HELP_TITLES": {
+            "ABOUT": "Arkadium's Games Arena",
+            "FEATURES": "Features",
+            "FAQ": "FAQ",
+            "SYS_REQUIRE": "System Requirements"
+        },
+        "HELP_MENU": {
+            "ABOUT": "The New Arena",
+            "FAQ": "FAQ",
+            "UPDATES": "Updates",
+            "ROADMAP": "Roadmap",
+            "FEATURES": "Features",
+            "NEW_GAMES": "New Games",
+            "SYS_REQUIRE": "System Requirements"
+        },
+        "AD_BLOCK_DETECT": {
+            "HEADER": "We noticed that you are using an",
+            "HEADER_BOLD": "ad blocker.",
+            "BODY": "We believe that games should be free for everyone to enjoy, and ads help us achieve this goal. We take all measures to ensure that the ads shown on this site are secure. In order to continue playing, please enable ads to appear on this site.",
+            "FOOTER": "For ad blocker disabling instructions",
+            "MESSAGE_FOOTER_BOLD": "click here."
+        },
+        "SEND_FEEDBACK": "Send Feedback",
+        "F_TUX": {
+            "FIRST_MSG": "This is your first time here. Let's find a game for you!",
+            "SECOND_MSG": "What kinds of games do you like?",
+            "CATEGORY_MSG": "We have tons of great {{category}} games.",
+            "INVITATION": "We picked our most popular for you to play!",
+            "BTN_GO": "Let's GO!",
+            "BTN_ALL_GAMES": "See All Games"
+        }
+    },
+    "games": [
+        {
+            "id": "5roll",
+            "status": 1,
+            "name": "5 Roll",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/FiveRoll/0.6/",
+            "tags": "[\"arcade\"]",
+            "slug": "5roll",
+            "sdkName": "FiveRoll",
+            "description": "See if you have the hot hand today and roll for a high score in this classic 5-dice game. Try your hand at the poker of dice games, roll your dice and look for pairs, 3 of a kinds, full houses and straights. See if you can’t beat your own odds in 5 roll!",
+            "version": "0.6",
+            "locales": "[\"fr\",\"it\",\"de\",\"es\",\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": "5roll-custom",
+                "name": "5 roll custom",
+                "description": "Custom description of 5 roll",
+                "rules": ""
+            }
+        },
+        {
+            "id": "9-ball-pool",
+            "status": 1,
+            "name": "9 Ball Pool",
+            "promoThumbPath": "build/resources/assets/thumbs9ball/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs9ball/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs9ball/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs9ball/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/9BallPool/0.75/",
+            "tags": "[\"arcade\"]",
+            "slug": "9-ball-pool",
+            "sdkName": "9BallPool",
+            "description": "If you're a billiards fanatic looking for a challenge, look no further! 9-Ball is a fast-paced, dynamic take on classic pool that will be sure to test your skills. Elaborate, rich visuals track your ball's path and give you a realistic feel for where it'll land. Play against an AI opponent and put your expertise to the test in this must-play pool game!",
+            "version": "0.75",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "addiction-solitaire",
+            "status": 1,
+            "name": "Addiction Solitaire",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/AddictionSolitaire/0.44/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "addiction-solitaire",
+            "sdkName": "AddictionSolitaire",
+            "description": "Try the newest solitaire game that's sure to get you addicted! Addiction Solitaire is a free online game that tests your speed and matching skills.",
+            "version": "0.44",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "alus-revenge-2",
+            "status": 1,
+            "name": "Alu's Revenge 2",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/AlusRevenge2/0.46/",
+            "tags": "[\"puzzles\"]",
+            "slug": "alus-revenge-2",
+            "sdkName": "AlusRevenge2",
+            "description": "Uh-oh, you've made the genie mad! Collapse the matching tiles in his temple to create mysterious Ben-Ben stones and escape!",
+            "version": "0.46",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": "yuriy-alus",
+                "name": "yuriy alus name",
+                "description": "yuriy alus description",
+                "rules": ""
+            }
+        },
+        {
+            "id": "anagram-crossword",
+            "status": 1,
+            "name": "Best Anagram Crossword",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/bestForPuzzleAnagramDailyCrossword/0.6/",
+            "tags": "[\"word\",\"daily\"]",
+            "slug": "anagram-crossword",
+            "sdkName": "bestForPuzzleAnagramDailyCrossword",
+            "description": "Anagram crosswords are just like normal crosswords - except that each clue is simply an anagram of the required solution.",
+            "version": "0.6",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "backgammon",
+            "status": 1,
+            "name": "Backgammon",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/Backgammon/0.20/",
+            "tags": "[\"arcade\",\"casino\"]",
+            "slug": "backgammon",
+            "sdkName": "Backgammon",
+            "description": "Backgammon and better than ever! Easy to play but hard to master, put your skills to the test in one of history’s oldest and most celebrated board games.",
+            "version": "0.20",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "blackjack",
+            "status": 1,
+            "name": "BlackJack",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/BlackJack/0.37/",
+            "tags": "[\"casino\",\"card\"]",
+            "slug": "blackjack",
+            "sdkName": "BlackJack",
+            "description": "Play free online blackjack - also called '21' - the classic casino card game of luck and skill!",
+            "version": "0.37",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": "<h2>Free Blackjack Game Overview</h2>\r\n<p>Welcome to this online blackjack page where you can play the best free blackjack games. The benefits of playing online are that you can learn blackjack rules in no rush and there is no actual monetary loss if you lose! You can click the menu button on the top right corner to read the rules. What's best: We also automatically save your game so you can come back anytime to play blackjack online! Remember, you don't win because you are closer to the value of 21 -- you win because your combined value of the cards is greater than that of dealer. </p>\r\n\r\n<h2>Blackjack Strategy</h2>\r\n<p>\r\n1. When the value of dealer's revealed card is 4,5 or 6,  it may be fruitful to double your bet with an Ace and 4 in hand.</p>\r\n<p>\r\n2. You may want to surrender if you have 16 in your hand while the dealer has a 9,10 or A.</p>\r\n<p>\r\n3. You should always split if you have a pair of Aces. </p>\r\n<p>\r\n4. If you get a pair of 7s, only press hit if the dealer has 8,9,10 or Ace.</p>\r\n<p>Play Blackjack for free now to test whether the strategy works! </p>"
+            }
+        },
+        {
+            "id": "block-champ",
+            "status": 1,
+            "name": "Block Champ",
+            "promoThumbPath": "build/resources/assets/thumbs/1080x400.jpg",
+            "thumbPath": "build/resources/assets/thumbs/600x600.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/600x277.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/1024x768.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/BlockChamp/0.30/",
+            "tags": "[\"arcade\",\"puzzles\"]",
+            "slug": "block-champ",
+            "sdkName": "BlockChamp",
+            "description": "Block Champ is a puzzle game that resembles other 10x10 classics, but with a few twists!",
+            "version": "0.30",
+            "locales": "[\"en\",\"de\",\"es\",\"fr\",\"it\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": "",
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "bridge",
+            "status": 1,
+            "name": "Bridge",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/Bridge/0.62/",
+            "tags": "[\"card\"]",
+            "slug": "bridge",
+            "sdkName": "Bridge",
+            "description": "Enjoy the best free online bridge game! Team up with a computer partner against opponents to test your skills in this great version of the classic card game.",
+            "version": "0.62",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "bubble-dragons",
+            "status": 1,
+            "name": "Bubble Dragons",
+            "promoThumbPath": "images/thumbs/promo-thumb.jpg",
+            "thumbPath": "images/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "images/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "images/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/BubbleDragons/0.25/",
+            "tags": "[\"arcade\"]",
+            "slug": "bubble-dragons",
+            "sdkName": "BubbleDragons",
+            "description": "Hatch and help dragons in the best new free online bubble shooter game. Pop bubbles by matching three or more of the same color. Unlock boosts and shoot at special items to activate their powers!",
+            "version": "0.25",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "bubble-dragons-saga",
+            "status": 1,
+            "name": "Bubble Dragons Saga",
+            "promoThumbPath": "images/thumbs/promo-thumb.jpg",
+            "thumbPath": "images/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "images/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "images/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/BubbleDragonsSaga/0.19/",
+            "tags": "[\"arcade\"]",
+            "slug": "bubble-dragons-saga",
+            "sdkName": "BubbleDragonsSaga",
+            "description": "Hatch and help dragons in the best new free online bubble shooter game. Pop bubbles by matching three or more of the same color. Unlock boosts and shoot at special items to activate their powers!",
+            "version": "0.19",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 1537228800000,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "candy-mahjongg",
+            "status": 1,
+            "name": "Mahjongg Candy",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/MahjonggCandy/0.33/",
+            "tags": "[\"mahjong\",\"puzzles\"]",
+            "slug": "candy-mahjongg",
+            "sdkName": "MahjonggCandy",
+            "description": "Mahjongg Candy is a sweet take on the classic tile game that's guaranteed to give you a sugar rush!",
+            "version": "0.33",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "canfield-solitaire",
+            "status": 1,
+            "name": "Canfield Solitaire",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/CanfieldSolitaire/0.35/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "canfield-solitaire",
+            "sdkName": "CanfieldSolitaire",
+            "description": "Play free online Canfield Solitaire - a notoriously challenging version of the classic card game. Choose either easy or hard versions to test your solitaire skills!",
+            "version": "0.35",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "chess",
+            "status": 1,
+            "name": "Chess",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/Chess/0.54/",
+            "tags": "[\"arcade\"]",
+            "slug": "chess",
+            "sdkName": "Chess",
+            "description": "Come and immerse yourself in chess online for free! Enjoy this timeless classic by using your best chess strategy to beat the computer. Get your chess pieces on the board and play free chess today!",
+            "version": "0.54",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": "",
+                "name": "",
+                "description": "",
+                "rules": "<h2><b style=\"font-size:22px;\">Chess Overview</b></h2>\n<p>Come and immerse yourself in chess online for free! Enjoy this timeless classic by using your best chess strategy to beat the computer. Get your chess pieces on the board and play free chess today!</p>\n<br />\n<h2><b style=\"font-size:22px;\">How to Play Chess</b></h2>\n<p>Chess is a game for all, and simpler than you may think. You can learn the chess rules here!</p>\n<br />\n                                                                                                                                                                            <p>Select to play as either the black or white chess pieces from the chess setup — white always moves first. The first move is performed by the Pawn or the Knight. Knights are the only pieces allowed to jump over others in the whole chess set and do so by moving out two squares and across one on the chess board. In chess, the pawn is free to move forward two squares on the opening move, however, it can only progress one square forward at a time after that. Also, it can only attack in a forward, diagonal direction. </p> \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br />\t\t\t\t\t\t\t\t\t\t\t\t\n                                                                                                                                                                             <p> After this opening to the chess game, the objective is to get the rest of your chess pieces out to attack the opponent's King, while simultaneously protecting your own. The other pieces are free to move across the chess set in the following ways: Bishops can move in any diagonal direction in an unlimited number of available chess board spaces. Rooks can do the same, but in any non-diagonal direction on the chess board. In chess, Queens (your most valuable piece in chess) can move in any direction in an unlimited number of available spaces. Kings can move in any direction, however, only one square at a time on the chess board. </p>\n<br/>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  \n                                                                                                                                                                                          <p>In chess, once the King is threatened, it is placed in \"check.\" The player with the King in danger must use the next move to either move it on the chess board, attack the threatening chess pieces, or block it to get out of \"check.\" Failure to do so could signal the end of the chess game with the King being placed in \"checkmate,\" meaning that it is impossible to avoid an attack on the King and the player who places the King in this position wins the game of chess online. </p>\n<br/>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  \n\n<h2><b style=\"font-size:22px;\">Fun Facts about Chess</b></h2>\n<p>- The longest a chess game could possibly be is 5,949 moves.</p>\n<p>- The first chess board setup with light and dark alternating squares was used in Europe in 1090.</p>\n<p>- In Chess, the term \"Checkmate\" derives from the Persian phrase \"Shah Mat\", meaning \"the King is dead\".</p>\n<p>- It is estimated that over 600 million people play chess online and around the world.</p>     \n<p>- Magnus Carlsen of Norway is the current world chess champion.</p>\n<br/> \n                                                                                                                                                                              <p> Try chess online for free today and begin your journey to the World Chess Championship!</p>\n\n"
+            }
+        },
+        {
+            "id": "classic-solitaire",
+            "status": 1,
+            "name": "Classic Solitaire",
+            "promoThumbPath": "assets/thumbs/promo-thumb-classic.jpg",
+            "thumbPath": "assets/thumbs/thumb-classic.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-classic.jpg",
+            "screenshotPath": "assets/thumbs/screenshot-classic.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/Classic/0.19/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "classic-solitaire",
+            "sdkName": "Classic",
+            "description": "Play free online Classic Solitaire, the world's favorite card game! You'll love testing yourself with this rewarding game of skill and concentration.",
+            "version": "0.19",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "crescent-solitaire",
+            "status": 1,
+            "name": "Crescent Solitaire",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/CrescentSolitaire/0.32/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "crescent-solitaire",
+            "sdkName": "CrescentSolitaire",
+            "description": "Crescent Solitaire is an exciting new take on the classic game, played with two decks. Can you control the chaos of the crescent?",
+            "version": "0.32",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "crucigramas-dificiles",
+            "status": 1,
+            "name": null,
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/sinapsisPasatiemposDificilesDailyCrossword/0.11/",
+            "tags": null,
+            "slug": "crucigramas-dificiles",
+            "sdkName": "sinapsisPasatiemposDificilesDailyCrossword",
+            "description": null,
+            "version": "0.11",
+            "locales": "[\"es\"]",
+            "releaseTime": 1542326400000,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "crucigramas-faciles",
+            "status": 1,
+            "name": null,
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/sinapsisPasatiemposFacilesDailyCrossword/0.11/",
+            "tags": null,
+            "slug": "crucigramas-faciles",
+            "sdkName": "sinapsisPasatiemposFacilesDailyCrossword",
+            "description": null,
+            "version": "0.11",
+            "locales": "[\"es\"]",
+            "releaseTime": 1542326400000,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "cryptic-crossword-by-cincinnus",
+            "status": 1,
+            "name": "Best Cryptic Crossword by Cincinnus",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/bestForPuzzleCincinnusDailyCrossword/0.5/",
+            "tags": "[\"word\"]",
+            "slug": "cryptic-crossword-by-cincinnus",
+            "sdkName": "bestForPuzzleCincinnusDailyCrossword",
+            "description": "These puzzles have previously been published in the Financial Times. There are 40 crosswords for you to enjoy.",
+            "version": "0.5",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "cryptic-crossword-by-orlando",
+            "status": 1,
+            "name": "Best Cryptic Crossword by Orlando",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/bestForPuzzleOrlandoDailyCrossword/0.5/",
+            "tags": "[\"word\"]",
+            "slug": "cryptic-crossword-by-orlando",
+            "sdkName": "bestForPuzzleOrlandoDailyCrossword",
+            "description": "These puzzles have previously been published in The Guardian. There are 40 crosswords for you to enjoy.",
+            "version": "0.5",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "daily-american-crossword",
+            "status": 1,
+            "name": "Best Daily American Crossword",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/bestForPuzzleDailyAmericanDailyCrossword/0.6/",
+            "tags": "[\"word\",\"daily\"]",
+            "slug": "daily-american-crossword",
+            "sdkName": "bestForPuzzleDailyAmericanDailyCrossword",
+            "description": "A free daily crossword that's not too difficult - just right for your coffee break.",
+            "version": "0.6",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "daily-crossword",
+            "status": 1,
+            "name": "Daily Crossword",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/Crossword/0.48/",
+            "tags": "[\"word\",\"daily\"]",
+            "slug": "daily-crossword",
+            "sdkName": "Crossword",
+            "description": "The best free online crossword is brand new, every day. No pencil or eraser required!",
+            "version": "0.48",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "daily-crossword-mini",
+            "status": 1,
+            "name": "Mini Crossword",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/miniDailyCrossword/0.9/",
+            "tags": "[\"word\",\"daily\"]",
+            "slug": "daily-crossword-mini",
+            "sdkName": "miniDailyCrossword",
+            "description": "The best free online crossword is brand new, every day. No pencil or eraser required!",
+            "version": "0.9",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "daily-cryptic-crossword",
+            "status": 1,
+            "name": "Best Daily Cryptic Crossword",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/bestForPuzzleDailyCrypticDailyCrossword/0.6/",
+            "tags": "[\"word\",\"daily\"]",
+            "slug": "daily-cryptic-crossword",
+            "sdkName": "bestForPuzzleDailyCrypticDailyCrossword",
+            "description": "A free daily cryptic crossword that's not too difficult - just right for your coffee break.",
+            "version": "0.6",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "daily-diagonal-sudoku",
+            "status": 1,
+            "name": "The Daily Diagonal Sudoku",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/SudokuDiagonal/0.8/",
+            "tags": "[\"puzzles\",\"daily\"]",
+            "slug": "daily-diagonal-sudoku",
+            "sdkName": "SudokuDiagonal",
+            "description": "Come back every day for a fresh new online Sudoku puzzle!",
+            "version": "0.8",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "daily-jigsaw",
+            "status": 1,
+            "name": "The Daily Jigsaw",
+            "promoThumbPath": "assets/thumbs/daily-jigsaw-promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/daily-thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-daily-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/daily-screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/DailyJigSaw/0.36/",
+            "tags": "[\"puzzles\",\"daily\"]",
+            "slug": "daily-jigsaw",
+            "sdkName": "DailyJigSaw",
+            "description": "Enjoy the best free online jigsaw, with a new puzzle every day. Start solving your favorite jigsaw puzzle now!",
+            "version": "0.36",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "daily-quick-crossword",
+            "status": 1,
+            "name": "Best Daily Quick Crossword",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/bestForPuzzleDailyQuickDailyCrossword/0.6/",
+            "tags": "[\"word\",\"daily\"]",
+            "slug": "daily-quick-crossword",
+            "sdkName": "bestForPuzzleDailyQuickDailyCrossword",
+            "description": "A free daily crossword that's not too difficult - just right for your coffee break.",
+            "version": "0.6",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "daily-sudoku",
+            "status": 1,
+            "name": "The Daily Sudoku",
+            "promoThumbPath": "assets/thumbs/daily-promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/daily-thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-daily-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/daily-screenshot.png",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/DailySudoku/0.55/",
+            "tags": "[\"puzzles\",\"daily\"]",
+            "slug": "daily-sudoku",
+            "sdkName": "DailySudoku",
+            "description": "Challenge yourself with this free online version of classic Sudoku. There's a new puzzle every day!",
+            "version": "0.55",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "daily-word-search",
+            "status": 1,
+            "name": "Daily Word Search",
+            "promoThumbPath": "assets/thumbs/1080x400.jpg",
+            "thumbPath": "assets/thumbs/600x600.jpg",
+            "secondaryThumbPath": "assets/thumbs/600x277.jpg",
+            "screenshotPath": "assets/thumbs/1024x768_screen.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/WordSearch/0.25/",
+            "tags": "[\"word\",\"daily\"]",
+            "slug": "daily-word-search",
+            "sdkName": "WordSearch",
+            "description": "Tired of broken pencils, smudged eraser marks, and scribbles all over your word search puzzles? Fret not! In Daily Word Search, your computer becomes the pencil AND the eraser. Solve puzzles daily and see your word search skills improve!",
+            "version": "0.25",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "forty-thieves-solitaire",
+            "status": 1,
+            "name": "Forty Thieves Solitaire",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/FortyThievesSolitaire/0.11/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "forty-thieves-solitaire",
+            "sdkName": "FortyThievesSolitaire",
+            "description": "Forty Thieves is back and better than ever. Test your skills with our brand new solitaire game. This classic is the truest test of your card skills. All players are welcome to play our easy and hard game modes. See how your talent ranks as you compete for the high score. Say 'Open Sesame' to Forty Thieves and you will be entertained for hours!",
+            "version": "0.11",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "freecell-solitaire",
+            "status": 1,
+            "name": "FreeCell Solitaire",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/FreecellSolitaire/0.55/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "freecell-solitaire",
+            "sdkName": "FreecellSolitaire",
+            "description": "In the mood to actually win a game of solitaire? Try Freecell Solitaire, where every game is solvable.",
+            "version": "0.55",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "golf-solitaire",
+            "status": 1,
+            "name": "Golf Solitaire",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/GolfSolitaire/0.47/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "golf-solitaire",
+            "sdkName": "GolfSolitaire",
+            "description": "Golf Solitaire is a quick and easy version of an old classic that relies more on skill than luck. Your goal is to remove all cards, one by one, by picking one card above or below the card in stock. On easy mode, it’s almost always solvable, but hard mode is trickier. The fewer cards that remain, the higher your score. Try your hand at Golf Solitaire!",
+            "version": "0.47",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "holiday-mahjong-dimensions",
+            "status": 1,
+            "name": "Holiday Mahjong Dimensions",
+            "promoThumbPath": "images/thumbs/promo-thumb.jpg",
+            "thumbPath": "images/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "images/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "images/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/HolidayMahjongDimensions/0.19/",
+            "tags": "[\"mahjong\",\"puzzles\"]",
+            "slug": "holiday-mahjong-dimensions",
+            "sdkName": "HolidayMahjongDimensions",
+            "description": "Built for Mahjong lovers by Mahjong lovers, play this free online Mahjong game for free! No downloading or installs necessary.",
+            "version": "0.19",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 1543536000000,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": "<h2>How to Play Holiday Mahjong Dimensions</h2>\r\n<p>Holiday Mahjong Dimensions brings Christmas cheer to the classic brain game; enjoy an entirely new set of levels that feature Christmas songs and tiles with Christmas trees, Christmas lights, Christmas ornaments and more! Mahjong rules are quite simple – match any two tiles that are free and have the same symbol. A tile is considered \"free\" and clickable only if it is uncovered and unblocked on its left and right sides. Just like Santa Claus, you must complete all sets before time runs out! </p>\r\n<h2>The History of Mahjong</h2>\r\n<p>Mahjong was invented over 200 years ago in China's Qing Dynasty and was played with 114 mahjong tiles and four players. As mahjong was adapted by different cultures in the 1900s, new variants of the classic game started to emerge.</p>\r\n<p>In Western cultures, mahjong solitaire is the most popular variation – that's the version you'll be playing in Holiday Mahjong Dimensions.</p>\r\n"
+            }
+        },
+        {
+            "id": "jigsaw",
+            "status": 1,
+            "name": "Jigsaw",
+            "promoThumbPath": "assets/thumbs/jigsaw-promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/JigSaw/0.38/",
+            "tags": "[\"puzzles\"]",
+            "slug": "jigsaw",
+            "sdkName": "JigSaw",
+            "description": "With the best free online jigsaw, you'll never lose a piece under the table again!",
+            "version": "0.38",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "jigsaw-blast",
+            "status": 1,
+            "name": "Jigsaw Blast",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/JigsawBlast/0.83/",
+            "tags": "[\"puzzles\",\"daily\"]",
+            "slug": "jigsaw-blast",
+            "sdkName": "JigsawBlast",
+            "description": "Online jigsaw puzzles have never been more exciting! Race against the clock in this fast-paced game to complete four puzzles before time runs out!",
+            "version": "0.83",
+            "locales": "[\"en\",\"fr\",\"de\",\"es\"]",
+            "releaseTime": 1538352000000,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "joseph-crossword",
+            "status": 1,
+            "name": "Thomas Joseph Crossword",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/hearstThomasJosephDailyCrossword/0.5/",
+            "tags": "[\"word\"]",
+            "slug": "joseph-crossword",
+            "sdkName": "hearstThomasJosephDailyCrossword",
+            "description": "Thomas Joseph Crossword is an engaging and challenging word puzzle with an attractive, colorful grid and a simple type-to-fill-in format complete with erasing capabilities.",
+            "version": "0.5",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "klondike-solitaire",
+            "status": 1,
+            "name": "Klondike Solitaire",
+            "promoThumbPath": "assets/thumbs/promo-thumb-klondike.jpg",
+            "thumbPath": "assets/thumbs/klondike300x300@2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-klondike300x300@2x.jpg",
+            "screenshotPath": "assets/thumbs/klondike1024x768screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/Klondike/0.43/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "klondike-solitaire",
+            "sdkName": "Klondike",
+            "description": "Play free online Klondike Solitaire, the world's favorite card game! You'll love testing yourself with this rewarding game of skill and concentration.",
+            "version": "0.43",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "landing-party",
+            "status": 1,
+            "name": "Landing Party",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/LandingParty/0.36/",
+            "tags": "[\"puzzles\"]",
+            "slug": "landing-party",
+            "sdkName": "LandingParty",
+            "description": "These aliens may look cute, but they're invading our planet! Teleport them home in this fun and challenging sci-fi strategy game.",
+            "version": "0.36",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "mahjong",
+            "status": 1,
+            "name": "Mahjong",
+            "promoThumbPath": "assets/thumbs/one-g/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/one-g/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/one-g/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/one-g/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/Mahjong/0.12/",
+            "tags": "[\"mahjong\",\"solitaire\",\"puzzles\"]",
+            "slug": "mahjong",
+            "sdkName": "Mahjong",
+            "description": "Enjoy this free online version of Mahjong, brought to you by the mahjong experts!  To play, turn and tap the mahjong tiles, clicking on matching pairs of unblocked tiles to clear them. Play now for free!",
+            "version": "0.12",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 1532563200000,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": "<h2>Free Online Mahjong Overview</h2>\r\n<p>Mahjong is a traditional game established in China about 100 years ago. Classic mahjong was played with 144 mahjong tiles and four players. It is a social game that allows friends and family to get together and have fun. The online mahjong rules are simple — match identical mahjong tiles that are not covered, and free from sides. Any special tiles such as flower tiles and season tiles can be matched. You can learn more about scoring and how to play mahjong by clicking the question mark in the upper-right corner of the mahjong games. You will want to challenge yourself by matching the tiles quickly because the game is timed.  Best of all: You can play mahjong online — no download needed! </p>\r\n\r\n<h2>Interesting Facts about Mahjong Games</h2>\r\n<p>\r\n- We have simple tiles (dots, bamboo, characters), honors tiles (winds, dragons) and bonus tiles (seasons, flowers) in our free mahjong games.</p>\r\n<p>\r\n- Mahjong, in chinese, means sparrow. The clacking of mahjong tiles during shuffling resembles the chattering of sparrows.</p>\r\n<p>\r\n- Mahjong games are played in chinese restaurants during lunch, dinner and even at weddings.</p>\r\n<p>\r\n- Mahjong, mah-jong, majong or mahjongg? They are all correct, depending on how you translate it from Chinese.</p>\r\n<p>\r\n- The British Mahjong Federation published a set of mahjong rules that are closer to the classic Chinese game than the Japansese or American variations.</p>\r\n<p>Mahjong is not just a social game now — you can play the online version of mahjong 24/7 all by yourself. Enjoy!</p>"
+            }
+        },
+        {
+            "id": "mah-jongg-age-of-alchemy",
+            "status": 1,
+            "name": "Mahjongg: Age of Alchemy",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/MahjonggAlchemy/0.4/",
+            "tags": "[\"mahjong\",\"puzzles\"]",
+            "slug": "mah-jongg-age-of-alchemy",
+            "sdkName": "MahjonggAlchemy",
+            "description": "A classic puzzle for all ages with an addicting new look!",
+            "version": "0.4",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 1536710400000,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": "mahjongg-age-custom",
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "mahjongg-dark-dimensions",
+            "status": 1,
+            "name": "Mahjongg Dark Dimensions",
+            "promoThumbPath": "images/thumbs/promo-thumb.jpg",
+            "thumbPath": "images/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "images/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "images/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/MahjonggDarkDimensions/0.34/",
+            "tags": "[\"mahjong\",\"puzzles\"]",
+            "slug": "mahjongg-dark-dimensions",
+            "sdkName": "MahjonggDarkDimensions",
+            "description": "Do you enjoy Mahjongg Dimensions but want a greater challenge? Keep the clock running in Mahjongg Dark Dimensions by matching Time Bonus Tiles. Speed is key, so keep your eyes on the prize and don't fall to the dark side in this free online tile matching game.",
+            "version": "0.34",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "mahjongg-dimensions",
+            "status": 1,
+            "name": "Mahjongg Dimensions",
+            "promoThumbPath": "images/thumbs/promo-thumb.jpg",
+            "thumbPath": "images/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "images/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "images/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/MahjonggDimensions/0.74/",
+            "tags": "[\"mahjong\",\"puzzles\"]",
+            "slug": "mahjongg-dimensions",
+            "sdkName": "MahjonggDimensions",
+            "description": "Tired of the same old matching games? Mahjongg Dimensions adds a third dimension of fun to your experience!",
+            "version": "0.74",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "mahjongg-solitaire",
+            "status": 1,
+            "name": "Mahjongg Solitaire",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/MahjonggSolitaire/0.27/",
+            "tags": "[\"mahjong\",\"solitaire\",\"puzzles\"]",
+            "slug": "mahjongg-solitaire",
+            "sdkName": "MahjonggSolitaire",
+            "description": "Mahjongg meets solitaire in this great new matching game that combines the best of both!",
+            "version": "0.27",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "mahjongg-toy-chest",
+            "status": 1,
+            "name": "Mahjongg Toy Chest",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/MahjonggToyChest/0.22/",
+            "tags": "[\"mahjong\",\"puzzles\"]",
+            "slug": "mahjongg-toy-chest",
+            "sdkName": "MahjonggToyChest",
+            "description": "Match all the unique animated toy tiles in the ever so popular Mahjongg matching game. Race the clock to try and match as many toys tiles as fast as you can!",
+            "version": "0.22",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "math-doku",
+            "status": 1,
+            "name": "MathDoku",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/MathDoku/0.33/",
+            "tags": "[\"puzzles\"]",
+            "slug": "math-doku",
+            "sdkName": "MathDoku",
+            "description": "KenKen players love MathDoku, the best free online version of the popular game. Test your number logic skills in games ranging from easy to hard!",
+            "version": "0.33",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "outspell",
+            "status": 1,
+            "name": "Outspell",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/Outspell/0.27/",
+            "tags": "[\"word\"]",
+            "slug": "outspell",
+            "sdkName": "Outspell",
+            "description": "Scrabble players love this free online word game, with fun twists on the classic rules! Play at levels from easy to expert.",
+            "version": "0.27",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "penny-dell-brain-booster-crossword",
+            "status": 1,
+            "name": "Penny Dell Brain Booster Crossword",
+            "promoThumbPath": "assets/thumbs/promo_1080x400.jpg",
+            "thumbPath": "assets/thumbs/thumb2x_600x600.jpg",
+            "secondaryThumbPath": "assets/thumbs/thumb2x_secondary_600x277.jpg",
+            "screenshotPath": "assets/thumbs/screenshot_1024x768.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/PennydellBrainBoosterCrossword/0.7/",
+            "tags": "[\"word\"]",
+            "slug": "penny-dell-brain-booster-crossword",
+            "sdkName": "PennydellBrainBoosterCrossword",
+            "description": "Enjoy a new challenging crossword every day and s-t-r-e-t-c-h your brainpower!",
+            "version": "0.7",
+            "locales": "[\"en\"]",
+            "releaseTime": 1541030400000,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "penny-dell-crossword",
+            "status": 1,
+            "name": "Penny Dell Crosswords",
+            "promoThumbPath": "assets/thumbs/penny-dell-crossword-daily-1080x400.jpg",
+            "thumbPath": "assets/thumbs/thumb2x-daily.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x-daily.jpg",
+            "screenshotPath": "assets/thumbs/screenshot-daily.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/PennydellDailyCrossword/0.3/",
+            "tags": "[\"word\"]",
+            "slug": "penny-dell-crossword",
+            "sdkName": "PennydellDailyCrossword",
+            "description": "Tired of waiting until Sunday to get your crossword fix? Worry no more, now you can play the crossword daily and for free with Daily Crossword. No pencil or eraser required!",
+            "version": "0.3",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "penny-dell-sudoku",
+            "status": 1,
+            "name": "Penny Dell Sudoku",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/PennyDellSudoku/0.10/",
+            "tags": "[\"puzzles\"]",
+            "slug": "penny-dell-sudoku",
+            "sdkName": "PennyDellSudoku",
+            "description": "Challenge yourself with this free online version of classic Sudoku. There's a new puzzle every day! ©2016 PennyDellPuzzles.com",
+            "version": "0.10",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "penny-dell-word-search",
+            "status": 1,
+            "name": "Penny Dell Word Search",
+            "promoThumbPath": "assets/thumbs/1080x400_pennyDell.jpg",
+            "thumbPath": "assets/thumbs/600x600_pennyDell.jpg",
+            "secondaryThumbPath": "assets/thumbs/600x277_pennyDell.jpg",
+            "screenshotPath": "assets/thumbs/1024x768_pennyDell.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/PennyDellWordSearch/0.21/",
+            "tags": "[\"word\"]",
+            "slug": "penny-dell-word-search",
+            "sdkName": "PennyDellWordSearch",
+            "description": "Tired of broken pencils, smudged eraser marks, and scribbles all over your word search puzzles? Fret not! In Penny Dell Word Search, your computer becomes the pencil AND the eraser. Solve puzzles daily and see your word search skills improve!",
+            "version": "0.21",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "polymath-crossword-by-cincinnus",
+            "status": 1,
+            "name": "Best Polymath Crossword by Cincinnus",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/bestForPuzzlePolymathDailyCrossword/0.5/",
+            "tags": "[\"word\"]",
+            "slug": "polymath-crossword-by-cincinnus",
+            "sdkName": "bestForPuzzlePolymathDailyCrossword",
+            "description": "Here are 40 crosswords to put your general knowledge to the test. These puzzles have previously been published in the Financial Times.",
+            "version": "0.5",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "pool",
+            "status": 1,
+            "name": "8 Ball Pool",
+            "promoThumbPath": "build/resources/assets/thumbs8ball/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs8ball/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs8ball/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs8ball/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/Pool/0.64/",
+            "tags": "[\"arcade\"]",
+            "slug": "pool",
+            "sdkName": "Pool",
+            "description": "Get a cue! Classic billiards is back and better than ever. Choose from two challenging game modes against an AI opponent, with several customizable features. Elaborate, rich visuals show your ball’s path and give you a realistic feel for where it’ll end up. The best part: It’s free!",
+            "version": "0.64",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "premier-crossword",
+            "status": 1,
+            "name": "Premier Crossword",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/hearstPremierSundayDailyCrossword/0.6/",
+            "tags": "[\"word\"]",
+            "slug": "premier-crossword",
+            "sdkName": "hearstPremierSundayDailyCrossword",
+            "description": "Designed for people who like to spend time on engaging and challenging word play, Premier Sunday Crossword is one of our largest and most challenging crossword puzzles.",
+            "version": "0.6",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "pyramid-solitaire",
+            "status": 1,
+            "name": "Pyramid Solitaire",
+            "promoThumbPath": "assets/thumbs/promo-thumb-pyramid.jpg",
+            "thumbPath": "assets/thumbs/pyramid300x300@2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-pyramid300x300@2x.jpg",
+            "screenshotPath": "assets/thumbs/pyramid1024x768screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/Pyramid/0.21/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "pyramid-solitaire",
+            "sdkName": "Pyramid",
+            "description": "Play Pyramid Solitaire by combining two cards that add up to 13. Can you conquer the pyramid?",
+            "version": "0.21",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "sheffer-crossword",
+            "status": 1,
+            "name": "Sheffer Crossword",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/hearstShefferDailyCrossword/0.5/",
+            "tags": "[\"word\"]",
+            "slug": "sheffer-crossword",
+            "sdkName": "hearstShefferDailyCrossword",
+            "description": "Sheffer Crossword Puzzle appeals to players of all ages and aptitudes. This daily crossword puzzle boosts word power and increases mental agility.",
+            "version": "0.5",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "slots-hollywood-dreams",
+            "status": 1,
+            "name": "Slots: Hollywood Dreams",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/HollywoodDreams/0.27/",
+            "tags": "[\"casino\"]",
+            "slug": "slots-hollywood-dreams",
+            "sdkName": "HollywoodDreams",
+            "description": "Roll like a celebrity with this new, high-stakes Hollywood slots game. With online slots, you won't need to worry about losing your shirt!",
+            "version": "0.27",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "spider-solitaire",
+            "status": 1,
+            "name": "Spider Solitaire",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/SpiderSolitaire/0.41/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "spider-solitaire",
+            "sdkName": "SpiderSolitaire",
+            "description": "This is no ordinary game of solitaire. Spider Solitaire ups the ante with multiple decks and new rules!",
+            "version": "0.41",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "sudoku",
+            "status": 1,
+            "name": "Sudoku",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/Sudoku/0.47/",
+            "tags": "[\"puzzles\"]",
+            "slug": "sudoku",
+            "sdkName": "Sudoku",
+            "description": "No need for a pencil with the best free online Sudoku. Test your skills now!",
+            "version": "0.47",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": "<h2>Free Web Sudoku Game Overview</h2>\r\n<p>Worried about damaging your sudoku puzzle with eraser marks? When you play our free online sudoku game, there's no need! You can choose easy sudoku, medium sudoku, or even sudoku for experts if you are confident. You can place notes, find sudoku tips, manage the timer and save the sudoku game by clicking the menu bar in the top-right corner. The goal of the game is to fill every square on the grid with a number from 1-9, where the numbers can only appear once in every row, column and 3x3 box. The best part of the game: This free online sudoku game delivers a new puzzle each and every day!</p>\r\n\r\n<h2>Interesting Facts about Sudoku</h2>\r\n<p>\r\n- What is Sudoku? 'Su' in Japanese means numbers while 'Doku' means single. Sudoku means single numbers. Therefore, in the sudoku game, we have to fill in numbers without repetition. </p>\r\n<p>\r\n- The Times in London helped spread Sudoku to Western culture by publishing its first daily sudoku in 2004. </p>\r\n<p>\r\n- Can you imagine that there are 5,472,730,538 possible sudoku puzzles? </p>\r\n<p>\r\n- Playing sudoku daily can boost your concentration, ease depression and even prevent Alzheimer's disease.</p>\r\n<p>You can play sudoku 24/7 with us! Enjoy!</p>"
+            }
+        },
+        {
+            "id": "sweet-shuffle",
+            "status": 1,
+            "name": "Sweet Shuffle",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/SweetShuffle/0.30/",
+            "tags": "[\"puzzles\"]",
+            "slug": "sweet-shuffle",
+            "sdkName": "SweetShuffle",
+            "description": "Mix and match colorful candies in this sweets-themed strategy game. Collect wrapped candies to boost your score, and set off special effects with powered-up combinations!",
+            "version": "0.30",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "tap-zap-boom",
+            "status": 1,
+            "name": "Tap Zap Boom",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/TapZapBoom/0.12/",
+            "tags": "[\"arcade\"]",
+            "slug": "tap-zap-boom",
+            "sdkName": "TapZapBoom",
+            "description": "Tap anywhere, zap the target, and – BOOM! – advance to the next level. Be careful not to zap any barriers; too many misfires and you’ll have to start over. Zap the target for an extended period of time for an added bonus!",
+            "version": "0.12",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": "",
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "ten-x-ten",
+            "status": 1,
+            "name": "10x10",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/TenXTen/0.24/",
+            "tags": "[\"puzzles\"]",
+            "slug": "ten-x-ten",
+            "sdkName": "TenXTen",
+            "description": "10x10 is a Tetris-like puzzle game that’s easy to play, but difficult to master! To play this free game, simply place the blocks onto the 10x10 grid. Once you have created a full vertical or horizontal line, it will disappear. But be careful - the game ends if you run out of room on the grid to place any of the blocks. Good luck!",
+            "version": "0.24",
+            "locales": "[\"en\",\"de\",\"fr\",\"it\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "the-sunday-crossword",
+            "status": 1,
+            "name": "Penny Dell Sunday Crossword",
+            "promoThumbPath": "assets/thumbs/penny-dell-crossword-sunday-1080x400.jpg",
+            "thumbPath": "assets/thumbs/thumb2x-sunday.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x-sunday.jpg",
+            "screenshotPath": "assets/thumbs/screenshot-sunday.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/PennydellSundayCrossword/0.3/",
+            "tags": "[\"word\"]",
+            "slug": "the-sunday-crossword",
+            "sdkName": "PennydellSundayCrossword",
+            "description": "Tired of waiting until Sunday to get your crossword fix? Worry no more, now you can play the crossword daily and for free with Daily Crossword. No pencil or eraser required!",
+            "version": "0.3",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "tri-peaks-solitaire",
+            "status": 1,
+            "name": "Tri-Peaks Solitaire",
+            "promoThumbPath": "assets/thumbs/promo-thumb-tripeaks.jpg",
+            "thumbPath": "assets/thumbs/tri-peaks300x300@2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-tri-peaks300x300@2x.jpg",
+            "screenshotPath": "assets/thumbs/tri-peaks1024x768screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/Tripeaks/0.6/",
+            "tags": "[\"solitaire\",\"card\"]",
+            "slug": "tri-peaks-solitaire",
+            "sdkName": "Tripeaks",
+            "description": "Try speedy Tri-Peaks Solitaire and see if you can scale the summits in record time. Triple the peaks means three times the fun!",
+            "version": "0.6",
+            "locales": "[\"en\",\"fr\",\"it\",\"de\",\"es\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "true-trivia-game",
+            "status": 1,
+            "name": "True Trivia Game",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/TrueTrivia/0.7/",
+            "tags": "[\"word\",\"puzzles\"]",
+            "slug": "true-trivia-game",
+            "sdkName": "TrueTrivia",
+            "description": "Built by trivia lovers for trivia lovers, this free online trivia game will test your ability to separate fact from fiction.  Instantly play online for free, no downloading needed!",
+            "version": "0.7",
+            "locales": "[\"en\"]",
+            "releaseTime": 1538438400000,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "wander-words",
+            "status": 1,
+            "name": "Wander Words",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/WanderWords/0.25/",
+            "tags": "[\"word\"]",
+            "slug": "wander-words",
+            "sdkName": "WanderWords",
+            "description": "This puzzling new word game combines a word search with a jumble. Find famous film titles, phrases and more!",
+            "version": "0.25",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        },
+        {
+            "id": "word-scramble",
+            "status": 1,
+            "name": "Scramble Words",
+            "promoThumbPath": "build/resources/assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "build/resources/assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "build/resources/assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "build/resources/assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenacloud.cdn.arkadiumhosted.com/arenaxstorage-blob/arenax-games/ScrambleWord/0.23/",
+            "tags": "[\"word\"]",
+            "slug": "word-scramble",
+            "sdkName": "ScrambleWord",
+            "description": "Built by Word Scramble lovers for Word Scramble lovers, see how many words you can spell in Scramble Words, a free online word game. No downloads needed!",
+            "version": "0.23",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": "<h2>Scramble Words Word Scramble Game Overview</h2>\r\n<p>Scramble Words is a free online word scramble game, with many exciting twists and turns!\r\n\r\nScramble Words is a word-making game. The goal is to unscramble the list of letters found at the bottom of the screen, using your keyboard or mouse to spell out words.  As you're unscrambling, keep in mind that scoring —the goal of the game — is based on the length of the words you spell, the difficulty of the letters used, and how quickly you find and spell each word. Up the difficulty and you'll be rewarded handsomely!</p>\r\n\r\n<h2>Interesting Facts about Scramble Words, the Word Scramble Game</h2>\r\n<p>\r\n-Scramble Words is a word-based game influenced by the popular game Outspell, with several updates, thanks to player feedback!\r\n-Unlike most other scramble games, Scramble Words will remember your place in the game, enabling you to come back right where you left off!\r\n-Scramble Words is one of the few games we've built utilizing purple as the main game color! We think it's pretty fitting. Do you know the others?\r\n-Scramble Words is great for native speakers looking to keep sharp, but also for those learning English, as it encourages learning in a gamified manner!\r\n-The mind is a curious being — re-sorting the letters via the toggle at the bottom-left of the game will frequently reveal words that you have previously not seen.</p>\r\n<p>Good luck, and we hope you enjoy playing this free online word scramble game!</p>"
+            }
+        },
+        {
+            "id": "word-wipe",
+            "status": 1,
+            "name": "Word Wipe",
+            "promoThumbPath": "assets/thumbs/promo-thumb.jpg",
+            "thumbPath": "assets/thumbs/thumb2x.jpg",
+            "secondaryThumbPath": "assets/thumbs/secondary-thumb2x.jpg",
+            "screenshotPath": "assets/thumbs/screenshot.jpg",
+            "assetOriginUrl": "https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-games/WordWipe/0.34/",
+            "tags": "[\"word\"]",
+            "slug": "word-wipe",
+            "sdkName": "WordWipe",
+            "description": "Play the world's best word-making game! Link random letters together to form words and clear as many rows as you can!",
+            "version": "0.34",
+            "locales": "[\"en\"]",
+            "releaseTime": 0,
+            "feedMetadata": {
+                "categories": [],
+                "membersOnly": false,
+                "alias": null,
+                "name": "",
+                "description": "",
+                "rules": ""
+            }
+        }
+    ],
+    "manualSorting": [
+        {
+            "slug": "mahjongg-solitaire",
+            "order": 1
+        },
+        {
+            "slug": "classic-solitaire",
+            "order": 2
+        },
+        {
+            "slug": "spider-solitaire",
+            "order": 3
+        },
+        {
+            "slug": "candy-mahjongg",
+            "order": 4
+        },
+        {
+            "slug": "mahjong",
+            "order": 5
+        },
+        {
+            "slug": "word-wipe",
+            "order": 6
+        },
+        {
+            "slug": "pool",
+            "order": 7
+        },
+        {
+            "slug": "outspell",
+            "order": 8
+        },
+        {
+            "slug": "addiction-solitaire",
+            "order": 9
+        },
+        {
+            "slug": "daily-american-crossword",
+            "order": 10
+        }
+    ],
+    "avatarsMatrix": [
+        {
+            "Group": "ANIMALS",
+            "Name": "Animals-Cat.png",
+            "Coins": 0,
+            "Level": 0,
+            "Base": true
+        },
+        {
+            "Group": "ANIMALS",
+            "Name": "Animals-Dog.png",
+            "Coins": 0,
+            "Level": 0,
+            "Base": true
+        },
+        {
+            "Group": "GAMES",
+            "Name": "Games-Cards.png",
+            "Coins": 0,
+            "Level": 0,
+            "Base": true
+        },
+        {
+            "Group": "GAMES",
+            "Name": "Games-Chess.png",
+            "Coins": 0,
+            "Level": 0,
+            "Base": true
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "Human-Female.png",
+            "Coins": 0,
+            "Level": 0,
+            "Base": true
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "Human-Male.png",
+            "Coins": 0,
+            "Level": 0,
+            "Base": true
+        },
+        {
+            "Group": "OBJECTS",
+            "Name": "Objects-Flower.png",
+            "Coins": 0,
+            "Level": 0,
+            "Base": true
+        },
+        {
+            "Group": "OBJECTS",
+            "Name": "Objects-Rocket.png",
+            "Coins": 0,
+            "Level": 0,
+            "Base": true
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-1.png",
+            "Coins": 100,
+            "Level": 2
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-2.png",
+            "Coins": 4900,
+            "Level": 20
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-3.png",
+            "Coins": 300,
+            "Level": 5
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-4.png",
+            "Coins": 4900,
+            "Level": 20
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-5.png",
+            "Coins": 100,
+            "Level": 2
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-6.png",
+            "Coins": 1500,
+            "Level": 11
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-7.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-8.png",
+            "Coins": 2400,
+            "Level": 14
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-9.png",
+            "Coins": 300,
+            "Level": 5
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-10.png",
+            "Coins": 2400,
+            "Level": 14
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-11.png",
+            "Coins": 100,
+            "Level": 2
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-12.png",
+            "Coins": 3500,
+            "Level": 17
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-13.png",
+            "Coins": 4900,
+            "Level": 20
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-14.png",
+            "Coins": 100,
+            "Level": 2
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-15.png",
+            "Coins": 300,
+            "Level": 5
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-16.png",
+            "Coins": 1500,
+            "Level": 11
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-17.png",
+            "Coins": 3500,
+            "Level": 17
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-18.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-19.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-20.png",
+            "Coins": 300,
+            "Level": 5
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-21.png",
+            "Coins": 2400,
+            "Level": 14
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-22.png",
+            "Coins": 100,
+            "Level": 2
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-23.png",
+            "Coins": 3500,
+            "Level": 17
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-24.png",
+            "Coins": 100,
+            "Level": 2
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-25.png",
+            "Coins": 800,
+            "Level": 8
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-26.png",
+            "Coins": 2400,
+            "Level": 14
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-27.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-28.png",
+            "Coins": 100,
+            "Level": 2
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-29.png",
+            "Coins": 3500,
+            "Level": 17
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-30.png",
+            "Coins": 4900,
+            "Level": 20
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-31.png",
+            "Coins": 2400,
+            "Level": 14
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-32.png",
+            "Coins": 2400,
+            "Level": 14
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-33.png",
+            "Coins": 1500,
+            "Level": 11
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-34.png",
+            "Coins": 3500,
+            "Level": 17
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-35.png",
+            "Coins": 3500,
+            "Level": 17
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-36.png",
+            "Coins": 2400,
+            "Level": 14
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-37.png",
+            "Coins": 1500,
+            "Level": 11
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-38.png",
+            "Coins": 300,
+            "Level": 5
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-39.png",
+            "Coins": 2400,
+            "Level": 14
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-40.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-41.png",
+            "Coins": 800,
+            "Level": 8
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-42.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-43.png",
+            "Coins": 2400,
+            "Level": 14
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-44.png",
+            "Coins": 1500,
+            "Level": 11
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-45.png",
+            "Coins": 1500,
+            "Level": 11
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-46.png",
+            "Coins": 4900,
+            "Level": 20
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-47.png",
+            "Coins": 1500,
+            "Level": 11
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-48.png",
+            "Coins": 800,
+            "Level": 8
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-49.png",
+            "Coins": 800,
+            "Level": 8
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-50.png",
+            "Coins": 1500,
+            "Level": 11
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-51.png",
+            "Coins": 800,
+            "Level": 8
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-52.png",
+            "Coins": 100,
+            "Level": 2
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-53.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-54.png",
+            "Coins": 100,
+            "Level": 2
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-55.png",
+            "Coins": 1500,
+            "Level": 11
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-56.png",
+            "Coins": 100,
+            "Level": 2
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-57.png",
+            "Coins": 4900,
+            "Level": 20
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-58.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-59.png",
+            "Coins": 4900,
+            "Level": 20
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-60.png",
+            "Coins": 300,
+            "Level": 5
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-61.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-62.png",
+            "Coins": 3500,
+            "Level": 17
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-63.png",
+            "Coins": 800,
+            "Level": 8
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-64.png",
+            "Coins": 800,
+            "Level": 8
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-65.png",
+            "Coins": 800,
+            "Level": 8
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-66.png",
+            "Coins": 300,
+            "Level": 5
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-67.png",
+            "Coins": 300,
+            "Level": 5
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-68.png",
+            "Coins": 1500,
+            "Level": 11
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-69.png",
+            "Coins": 3500,
+            "Level": 17
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-70.png",
+            "Coins": 800,
+            "Level": 8
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-71.png",
+            "Coins": 300,
+            "Level": 5
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-72.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-73.png",
+            "Coins": 800,
+            "Level": 8
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-74.png",
+            "Coins": 300,
+            "Level": 5
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-75.png",
+            "Coins": 6400,
+            "Level": 23
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-76.png",
+            "Coins": 4900,
+            "Level": 20
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-77.png",
+            "Coins": 3500,
+            "Level": 17
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-78.png",
+            "Coins": 4900,
+            "Level": 20
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-79.png",
+            "Coins": 4900,
+            "Level": 20
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-80.png",
+            "Coins": 2400,
+            "Level": 14
+        },
+        {
+            "Group": "HUMANS",
+            "Name": "avatar-81.png",
+            "Coins": 3500,
+            "Level": 17
+        }
+    ]
+}

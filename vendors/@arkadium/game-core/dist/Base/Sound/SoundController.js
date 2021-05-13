@@ -1,0 +1,7 @@
+"use strict";
+/*!@license
+ * Copyright (c) Arkadium Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Denis Gusarov <denis.gusarov@arkadium.com>
+ */Object.defineProperty(exports,"__esModule",{value:!0});var Howler1_1=require("./Howler1"),howler2=require("howler"),SoundController=function(){function e(){if(this._howler1=null,this._masterVolume=1,this._isInternetExplorer=this._isInternetExplorer="Microsoft Internet Explorer"==navigator.appName||!(!navigator.userAgent.match(/Trident/)&&!navigator.userAgent.match(/rv:11/)),this._isInternetExplorer){var e=Howler1_1.Howler1();this._howler1=e}}return e.prototype.load=function(e){return this._isInternetExplorer?new this._howler1.Howl({urls:[e]}):new howler2.Howl({src:[e]})},e.prototype.updateMasterVolume=function(){this.setMasterVolume(this._masterVolume)},e.prototype.setMasterVolume=function(e){this._masterVolume=e,this._isInternetExplorer?this._howler1.Howler.volume(e):howler2.Howler.volume(e)},e.prototype.getMasterVolume=function(){return this._isInternetExplorer?this._howler1.Howler._volume:howler2.Howler.volume()},e}();exports.SoundController=SoundController;

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="Head1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>
+	MSN Games
+</title>
+<script type="text/javascript">
+        var sdkInstance = "appInsightsSDK"; window[sdkInstance] = "appInsights"; var aiName = window[sdkInstance], aisdk = window[aiName] || function (e) { function n(e) { t[e] = function () { var n = arguments; t.queue.push(function () { t[e].apply(t, n) }) } } var t = { config: e }; t.initialize = !0; var i = document, a = window; setTimeout(function () { var n = i.createElement("script"); n.src = e.url || "https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js", i.getElementsByTagName("script")[0].parentNode.appendChild(n) }); try { t.cookie = i.cookie } catch (e) { } t.queue = [], t.version = 2; for (var r = ["Event", "PageView", "Exception", "Trace", "DependencyData", "Metric", "PageViewPerformance"]; r.length;)n("track" + r.pop()); n("startTrackPage"), n("stopTrackPage"); var s = "Track" + r[0]; if (n("start" + s), n("stop" + s), n("setAuthenticatedUserContext"), n("clearAuthenticatedUserContext"), n("flush"), !(!0 === e.disableExceptionTracking || e.extensionConfig && e.extensionConfig.ApplicationInsightsAnalytics && !0 === e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)) { n("_" + (r = "onerror")); var o = a[r]; a[r] = function (e, n, i, a, s) { var c = o && o(e, n, i, a, s); return !0 !== c && t["_" + r]({ message: e, url: n, lineNumber: i, columnNumber: a, error: s }), c }, e.autoExceptionInstrumented = !0 } return t }(
+        {
+            instrumentationKey: "91b5e761-ce52-42c2-ba4c-fc9fb625431e",
+            namePrefix: "microsoft.casualgames.zone.appInsights",
+            disableAjaxTracking: true
+        }
+        );window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length;
+    </script>
+    <script>
+        var zoneSuppressExceptions = function(envelope) {
+            if (envelope.baseType === 'ExceptionData' && envelope.baseData.exceptions) {
+                for (var exceptionOffset = 0; exceptionOffset < envelope.baseData.exceptions.length; exceptionOffset++) {
+                    if (envelope.baseData.exceptions[exceptionOffset].message === 'TypeError: \'undefined\' is not an object (evaluating \'Array.prototype\') at window.onerror' &&
+                        envelope.baseData.exceptions[exceptionOffset].stack.indexOf('ZTVRefreshProxy.aspx') >= 0) {
+                            return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+
+        appInsights.queue.push(function() {
+            appInsights.addTelemetryInitializer(zoneSuppressExceptions);
+        });
+    </script>
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="//zone.msn.com/js/jquery-3.2.1.min.js">\x3C/script>');
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://mssl.fwmrm.net/p/msn_live/AdManager.js"></script>
+<script language="javascript" type="text/javascript" src="//zone.msn.com/js/gameplayer/common.js"></script>
+<script language="javascript" type="text/javascript" src="//zone.msn.com/js/utility.js"></script>
+<script language="javascript" type="text/javascript" src="//zone.msn.com/js/cookie.js"></script>
+<script language="javascript" type="text/javascript" src="//zone.msn.com/js/freewheelhtml5admanager.js"></script>
+<script language="javascript" type="text/javascript" src="//zone.msn.com/js/zoneadwrapper.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <style>
+        #overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        #loading {
+            display: none;
+            position: absolute;
+            top: 46%;
+            left: 46%;
+        }
+
+        #loadingText {
+            color: #ffffff;
+        }
+
+        #loading-img {
+            height: 32px;
+            width: 32px;
+            margin-bottom: 10px;
+        }
+
+        body {
+            background: transparent;
+        }
+
+        html {
+            background: transparent;
+        }
+    </style>
+    <script type="text/javascript">
+        function IFocus() {
+            var iframe = $("#gameFrame")[0];
+            iframe.contentWindow.focus();
+            // iframe.content.focus();
+        }
+        function setFrame(objGmFrm) {
+            console.log("Game frame src : " + objGmFrm.src);
+            var isResponsive = $('#hdnResponsive').val() == '' ? "false" : $('#hdnResponsive').val();
+            if (isResponsive.toLowerCase() == "false" && $("#gameFrame").is(":visible") && objGmFrm.src != '' && objGmFrm.src == $('#hdnGameURL').val()) {
+                $('#gameFrame').css({
+                    '-moz-transform': '',
+                    '-o-transform': '',
+                    '-webkit-transform': '',
+                    '-ms-transform': ''
+                });
+                var gameHeight;
+                var gameWidth;
+                var gmWprHeight = $("#wrapper").height() - 8;
+                var gmWprWidth = $("#wrapper").width();
+                var marginLeftGmFrm;
+                var marginTopGmFrm;
+                if ($('#hdnGameWidth').val() == '') {
+                    gameHeight = Math.max(
+                        objGmFrm.contentWindow.document.documentElement.clientHeight,
+                        objGmFrm.contentWindow.document.body.scrollHeight,
+                        objGmFrm.contentWindow.document.documentElement.scrollHeight,
+                        objGmFrm.contentWindow.document.body.offsetHeight,
+                        objGmFrm.contentWindow.document.documentElement.offsetHeight
+                    );
+                    $('#hdnGameHeight').val(gameHeight);
+                    gameWidth = Math.max(
+                        objGmFrm.contentWindow.document.documentElement.clientWidth,
+                        objGmFrm.contentWindow.document.body.scrollWidth,
+                        objGmFrm.contentWindow.document.documentElement.scrollWidth,
+                        objGmFrm.contentWindow.document.body.offsetWidth,
+                        objGmFrm.contentWindow.document.documentElement.offsetWidth
+                    );
+                    $('#hdnGameWidth').val(gameWidth);
+                    console.log("game dimensions width x height :" + gameWidth + " x " + gameHeight);
+                }
+                else {
+                    gameHeight = parseInt($('#hdnGameHeight').val());
+                    gameWidth = parseInt($('#hdnGameWidth').val());
+                }
+                var heightscale = gmWprHeight * 0.98 / gameHeight; // To occupy 98% of height available
+                var widthscale = gmWprWidth * 0.98 / gameWidth;    // To occupy 98% of width available
+                var gameFrmScale = Math.min(widthscale, heightscale);
+                console.log("scales: width x height :" + widthscale + " x " + heightscale);
+
+                //var gameFrmScale = Math.min(gmWprHeight / gameHeight, gmWprWidth / gameWidth);
+                //console.log("scales: width x height :" + gmWprWidth / gameWidth + " x " + gmWprHeight / gameHeight)
+
+                $('#gameFrame').css({
+                    'height': '100%', // + gameHeight + 'px',
+                    'width': '' + gameWidth + 'px',
+                    'overflow': 'hidden',
+                    'border': '0'
+                });
+
+                $('#gameFrame').css({
+                    '-moz-transform': 'scale(' + gameFrmScale + ')',
+                    '-moz-transform-origin': '0 0',
+                    '-o-transform': 'scale(' + gameFrmScale + ')',
+                    '-o-transform-origin': '0 0',
+                    '-webkit-transform': 'scale(' + gameFrmScale + ')',
+                    '-webkit-transform-origin': '0 0',
+                    '-ms-transform': 'scale(' + gameFrmScale + ')',
+                    '-ms-transform-origin': '0 0'
+                });
+
+                var transFormedWidthFrm = gameWidth * gameFrmScale;
+                marginLeftGmFrm = (gmWprWidth - transFormedWidthFrm) / 2;
+
+                $('#gameFrame').css({
+                    'margin-left': '' + marginLeftGmFrm + 'px'
+                });
+
+                var transFormedHeightFrm = gameHeight * gameFrmScale;
+                marginTopGmFrm = (gmWprHeight - transFormedHeightFrm) / 2;
+
+                $('#gameFrame').css({
+                    'margin-top': '' + marginTopGmFrm + 'px'
+                });
+            }
+            else { //for responsive games
+                $("#gameFrame").height(gmWprHeight * 0.98); // To occupy 98% of height available
+                $("#gameFrame").width(gmWprWidth * 0.98);   // To occupy 98% of width available
+
+                marginLeftGmFrm = (gmWprWidth - $("#gameFrame").width()) / 2;
+
+                $('#gameFrame').css({
+                    'margin-left': '' + marginLeftGmFrm + 'px'
+                });
+
+                marginTopGmFrm = (gmWprHeight - $("#gameFrame").height()) / 2;
+
+                $('#gameFrame').css({
+                    'margin-top': '' + marginTopGmFrm + 'px'
+                });
+            }
+            IFocus();
+        }
+    </script>
+</head>
+<body style="overflow: hidden;">
+    <script type="text/javascript">
+        var wrprHeight = window.innerHeight - 10;//$("body").height();
+        document.write("<style>	#wrapper { height:" + wrprHeight + "px;padding:0;overflow:hidden;border:0;margin:0;}</style>");
+    </script>
+    <div class="container-fluid">
+        <!-- CHANGED -->
+        <form method="post" action="./gameHTMLaspx.html?game=mssolitairecollection&amp;instance=default" id="ctl00">
+            <div>
+                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTMzMjAyOTkwDxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgFkZIax63nDx3iXVKNefEzaJHyqRpdSt3N7guGPFf6So5+c" />
+            </div>
+
+            <div>
+
+                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BA721DA4" />
+                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAcf5i+VJ9gaXkDjA5dmhqSJhVzU4meSvzuc+KcQ83HxhZPz4NdK/2T3d3gBjSyNXlVXho0JWSHwYxHik78yrqNhto3AmWzE3K3/Dx2LHJebHizFwenqfFWYU+sEEf92PfvpLa80LeWH/nWLTefhjE4oFcqfXZhOvcxUXcYGh0ODFkg/nkoCg5wYLYxEl5dxeb8=" />
+            </div>
+            <!-- CHANGED -->
+            <input type="hidden" name="hdnGameURL" id="hdnGameURL" value="./default.html?param1Name=param1Value" />
+            <!-- CHANGED -->
+            <input type="hidden" name="hdnAdTimeinterval" id="hdnAdTimeinterval" value="30000" />
+            <input type="hidden" name="hdnLevels" id="hdnLevels" value="1" />
+            <input type="hidden" name="hdnGameWidth" id="hdnGameWidth" value="1280" />
+            <input type="hidden" name="hdnGameHeight" id="hdnGameHeight" value="960" />
+            <input type="hidden" name="hdnResponsive" id="hdnResponsive" value="true" />
+            <div class="row">
+                <div id="wrapper" class="col-xs-12 embed-responsive  embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" id="gameFrame" src="" onload="setFrame(this)"></iframe>
+                </div>
+            </div>
+        </form>
+        <div id="GameAdContainer" style="display: none; position: relative">
+            <iframe id="GameAdFrame" name="GameAdFrame" src="" class="embed-responsive-item" frameborder="0" style="display: none; width: 728px"></iframe>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var adsStartedCount = 0;
+        var preRolAd = true;
+        var gamePaused = false;
+        var playingAd = false;
+        var gameURL = $('#hdnGameURL').val();
+        var targetDomain;
+        var readyToComm = false;
+
+        if (gameURL.indexOf("/", gameURL.indexOf("://") + 3) > -1)
+            targetDomain = gameURL.substring(0, gameURL.indexOf("/", gameURL.indexOf("://") + 3));
+        else
+            targetDomain = gameURL;
+
+        var wrapper = new ZoneAdWrapper(targetDomain, document.getElementById("gameFrame").contentWindow);
+
+        if (window.addEventListener) {
+            // For standards-compliant web browsers
+            window.addEventListener("message", receiveMessage, false);
+        }
+        else {
+            window.attachEvent("onmessage", receiveMessage);
+
+        }
+
+        var domainList2 = new Array();
+
+        domainList2[domainList2.length] = "http://zone.msn.com";
+        domainList2[domainList2.length] = "https://zone.msn.com";
+        domainList2[domainList2.length] = "http://games.ca.zone.msn.com";
+        domainList2[domainList2.length] = "https://games.ca.zone.msn.com";
+        domainList2[domainList2.length] = "http://cdn.zone.msn.com";
+        domainList2[domainList2.length] = "https://cdn.zone.msn.com";
+        domainList2[domainList2.length] = "https://player.zone.msn.com";
+        domainList2[domainList2.length] = "https://wgp-app-staging.azurewebsites.net";
+        domainList2[domainList2.length] = "https://wgp-app-uat.azurewebsites.net";
+        domainList2[domainList2.length] = "https://wgp-app-uat-feature-1.azurewebsites.net";
+        domainList2[domainList2.length] = "https://wgp-app-uat-feature-2.azurewebsites.net";
+        domainList2[domainList2.length] = "https://wgp-app-uat-feature-3.azurewebsites.net";
+        domainList2[domainList2.length] = "http://localhost";
+        domainList2[domainList2.length] = "https://localhost";
+        domainList2[domainList2.length] = "http://127.0.0.1";
+        domainList2[domainList2.length] = "https://127.0.0.1";
+        domainList2[domainList2.length] = targetDomain;
+
+        function validateDomain2(origin) {
+            for (var i = 0; i < domainList2.length; i++) {
+                if (origin.toLowerCase().indexOf(domainList2[i], 0) === 0) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        function receiveMessage(evt) {
+            var message;
+
+            if (validateDomain2(evt.origin)) {
+
+                switch (evt.data) {
+                    case 'quit':
+                        if (!playingAd)
+                            wrapper.quitGame();
+                        break;
+                    case 'pause':
+                        if (!playingAd)
+                            wrapper.pauseGame();
+                        IFocus();
+                        break;
+                    case 'mute':
+                        if (!playingAd)
+                            wrapper.muteGame();
+                        IFocus();
+                        break;
+                    case 'fullScreen':
+                        console.log("full screen frame window height : " + window.innerHeight);
+                        $("#wrapper").height(window.innerHeight);
+                        setFrame(document.getElementById("gameFrame"));
+                        setAdPosition();
+                        IFocus();
+                        break;
+                    case 'windowScreen':
+                        console.log("window screen frame window height : " + window.innerHeight);
+                        $("#wrapper").height(window.innerHeight);
+                        setFrame(document.getElementById("gameFrame"));
+                        setAdPosition();
+                        IFocus();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        wrapper.onCompletedLevel = function () {
+            var parentUrl = null;
+            try {
+                if (window.parent && window.parent.location && window.parent.location.href) {
+                    parentUrl = window.parent.location.href;
+                }
+            }
+            catch (e) { }
+
+            var properties = {
+                parentUrl: parentUrl,
+                referrer: document.referrer,
+                url: window.location.href,
+                userAgent: window.navigator.userAgent
+            };
+
+            appInsights.trackEvent({ name: "GDKLevelComplete" }, properties);
+        }
+
+        wrapper.onReceivingScore = function (data) {
+            window.parent.postMessage(data, '*');
+        };
+
+        wrapper.onStartAdPlayback = function () {
+            playAd();
+        };
+
+        wrapper.onReceivingReadyForComm = function () {
+            var parentUrl = null;
+            try {
+                if (window.parent && window.parent.location && window.parent.location.href) {
+                    parentUrl = window.parent.location.href;
+                }
+            }
+            catch (e) { }
+
+            var properties = {
+                parentUrl: parentUrl,
+                referrer: document.referrer,
+                url: window.location.href,
+                userAgent: window.navigator.userAgent
+            };
+
+            console.log("ApplicationInsightsEvent: " + "GDKReadyToCommunicate", properties);
+            appInsights.trackEvent({ name: "GDKReadyToCommunicate" }, properties);
+            readyToComm = true;
+            window.parent.postMessage('showIcons', '*');
+            IFocus();
+        };
+
+        function playAd() {
+            if (!playingAd) {
+                adsStartedCount++;
+                playingAd = true;
+                $('#gameFrame').hide();
+                window.parent.postMessage('hideIcons', '*');
+                FWAddVideoDiv(adsStartedCount);
+            }
+        }
+
+        function zoneFindVideoAd(doc) {
+            var videoAd = doc.querySelector("video[src]:not([src=''])");
+            if (videoAd === null) {
+                var frames = doc.querySelectorAll("iframe");
+                for (var i = 0; !videoAd && i < frames.length; i++) {
+                    try {
+                        videoAd = zoneFindVideoAd(frames[i].contentDocument);
+                    }
+                    catch (err) {
+                        // must be a frame from another domain
+                    }
+                }
+            }
+
+            return videoAd;
+        }
+
+        var zoneVideoSearchAttempts = 0;
+        function zonePlayBlockedVideo() {
+            var video = zoneFindVideoAd(document);
+            zoneVideoSearchAttempts++;
+            if (video !== null) {
+                if (!video.paused) {
+                    console.log('Autoplay muted not needed');
+                    zoneVideoSearchAttempts = 0;
+
+                    return;
+                }
+
+                var parentUrl = null;
+                try {
+                    if (window.parent && window.parent.location && window.parent.location.href) {
+                        parentUrl = window.parent.location.href;
+                    }
+                }
+                catch (e) { }
+
+                var properties = {
+                    parentUrl: parentUrl,
+                    referrer: document.referrer,
+                    url: window.location.href,
+                    userAgent: window.navigator.userAgent,
+                    videoDuration: video.duration,
+                    videoURL: video.src
+                };
+
+                var unmutedPlayPromise = video.play();
+                if (unmutedPlayPromise !== undefined) {
+                    unmutedPlayPromise.catch(function (error) {
+                        console.log("ApplicationInsightsEvent: " + "VideoAdvertisementWorkaroundAutoplayBlocked", properties);
+                        appInsights.trackEvent({ name: "VideoAdvertisementWorkaroundAutoplayBlocked" }, properties);
+                        video.autoplay = true;
+                        video.controls = true;
+                        video.volume = 0;
+                        video.muted = true;
+                        var mutedPlayPromise = video.play();
+                        if (mutedPlayPromise !== undefined) {
+                            mutedPlayPromise.catch(function (error) {
+                                properties.error = error;
+                                console.log("ApplicationInsightsEvent: " + "VideoAdvertisementWorkaroundAutoplayBlockedFailure", properties);
+                                appInsights.trackEvent({ name: "VideoAdvertisementWorkaroundAutoplayBlockedFailure" }, properties);
+                                setTimeout(function () { zonePlayBlockedVideo(); }, 2000);
+                            });
+                        }
+                    });
+                }
+            }
+            else if (zoneVideoSearchAttempts < 15) {
+                setTimeout(zonePlayBlockedVideo, 1000);
+            } else {
+                zoneVideoSearchAttempts = 0;
+            }
+        }
+
+        $(document).ready(function () {
+            try {
+                $('#gameFrame').attr('src', '');
+            }
+            catch (err) { /*empty*/ }
+            if (gameURL !== '') {
+                playAd();
+            }
+        });
+
+        function postAdInterval() {
+            if (readyToComm) {
+                var adInterval = parseInt($('#hdnAdTimeinterval').val());
+
+                if (parseInt(adInterval) > 0) {
+                    wrapper.sendAdInterval(adInterval);
+                }
+            }
+            else {
+                setTimeout(function () {
+                    postAdInterval();
+                }, 300);
+            }
+        }
+
+        function postAdLevels() {
+            var adLevels = $('#hdnLevels').val();
+            if (readyToComm && adLevels && adLevels != '') {
+                wrapper.sendAdLevels(adLevels);
+            }
+            else {
+                setTimeout(function () {
+                    postAdLevels();
+                }, 300);
+            }
+        }
+
+        function callback1() {
+            playingAd = false;
+            $('#gameFrame').show();
+
+            if (!preRolAd) {
+                wrapper.adPlaybackCompleted();
+                window.parent.postMessage('showIcons', '*');
+                setFrame(document.getElementById("gameFrame"));
+            }
+
+            if (preRolAd) {
+                preRolAd = false;
+                $('#gameFrame').attr('src', gameURL);
+                postAdInterval();
+                postAdLevels();
+            }
+        }
+    </script>
+</body>
+</html>

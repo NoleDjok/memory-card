@@ -1,0 +1,30 @@
+import { AnimationFadeOutMode, TweenType } from "../core/DragonBones";
+import { BaseObject } from "../core/BaseObject";
+export declare class AnimationConfig extends BaseObject {
+    static toString(): string;
+    pauseFadeOut: boolean;
+    fadeOutMode: AnimationFadeOutMode;
+    fadeOutTweenType: TweenType;
+    fadeOutTime: number;
+    pauseFadeIn: boolean;
+    actionEnabled: boolean;
+    additive: boolean;
+    displayControl: boolean;
+    resetToPose: boolean;
+    fadeInTweenType: TweenType;
+    playTimes: number;
+    layer: number;
+    position: number;
+    duration: number;
+    timeScale: number;
+    weight: number;
+    fadeInTime: number;
+    autoFadeOutTime: number;
+    name: string;
+    animation: string;
+    group: string;
+    readonly boneMask: Array<string>;
+    protected _onClear(): void;
+    clear(): void;
+    copyFrom(value: AnimationConfig): void;
+}

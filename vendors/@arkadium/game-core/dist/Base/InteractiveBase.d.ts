@@ -1,0 +1,100 @@
+/*!@license
+ * Copyright (c) Arkadium Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Denis Gusarov <denis.gusarov@arkadium.com>
+ */
+/// <reference types="pixi.js" />
+import { ChildViews } from "./ChildViews";
+import { IPreloadersConfiguration } from "./IViewConfiguration";
+import { ScreenOrientationEnum } from "./Orientation/ScreenOrientationEnum";
+import { IRootBase } from "./IRootBase";
+import { ISimpleViewConfiguration } from "./ISimpleViewConfiguration";
+export declare abstract class InteractiveBase implements IRootBase {
+    private _preloadLoaded;
+    private _manualResize;
+    version: any;
+    gameId: any;
+    private _contentLoaded;
+    protected sizeLandscape: PIXI.Point;
+    protected sizePortrait: PIXI.Point;
+    private readonly _resourcesLoader;
+    private readonly _devicePixelRatio;
+    private readonly _resourcesRoot;
+    private readonly _renderer;
+    private readonly _htmlElement;
+    private readonly _keyboardManager;
+    private _initialized;
+    protected _container: PIXI.Container;
+    protected _width: number;
+    protected _height: number;
+    protected _scaleFactor: number;
+    protected _layers: Array<PIXI.Container>;
+    private _orientation;
+    set orientation(value: ScreenOrientationEnum);
+    private _clientWidth;
+    private _clientHeight;
+    private _resizeDelay;
+    private _tweenResizeDelay;
+    protected _assetScale: number;
+    private _scale;
+    graphHigh: boolean;
+    private _isLandscape;
+    get width(): number;
+    get height(): number;
+    get scaleFactor(): number;
+    get isLandscape(): boolean;
+    private _size;
+    private config;
+    private _preloaderchildViews;
+    protected $childViews: ChildViews;
+    constructor(options?: any);
+    protected abstract getConfiguration(): ISimpleViewConfiguration;
+    protected abstract getPreloadersConfiguration(): IPreloadersConfiguration;
+    protected abstract onInitialize(): void;
+    protected abstract onSetLandscape(): void;
+    protected abstract onSetPortrait(): void;
+    protected onUpdate(frameRate: number): void;
+    protected abstract onCreate(): void;
+    protected preloaderConfigure(): any;
+    protected configure(): void;
+    protected initialize(): void;
+    showLoading(visible: boolean): void;
+    setLoading(progress: number): void;
+    create(): Promise<unknown>;
+    protected createStage(): void;
+    dispose(): void;
+    focus(isFocus: boolean): void;
+    protected onFocus(isFocus: boolean): void;
+    private update;
+    stop: boolean;
+    frameCount: number;
+    currentFps: number;
+    private last_time;
+    fpsInterval: any;
+    startTime: any;
+    now: any;
+    then: any;
+    elapsed: any;
+    play(): void;
+    pause(): void;
+    private getBackgroundColor;
+    private checkVisible;
+    private _animate;
+    private _rendererResize;
+    rendererResize(force?: boolean): void;
+    protected setRotatedPortrait(width: any, height: any): void;
+    protected setPortrait(width: any, height: any): void;
+    protected setLandscape(width: any, height: any): void;
+    protected clear(): void;
+    protected resize(): void;
+    getLayer(level: number): PIXI.Container;
+    protected contentLoaded(): void;
+    protected onContentLoaded(): void;
+    protected defineAssetScale(): number;
+    private _addChild;
+    private _innitializeChild;
+    removeChildByName(childName: string): void;
+    private _removeChild;
+    showLoadingTimeout: number;
+}

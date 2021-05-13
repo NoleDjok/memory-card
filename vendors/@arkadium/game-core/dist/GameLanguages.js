@@ -1,0 +1,7 @@
+"use strict";
+/*!@license
+ * Copyright (c) Arkadium Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Denis Gusarov <denis.gusarov@arkadium.com>
+ */var __decorate=this&&this.__decorate||function(e,t,n,r){var a,o=arguments.length,u=o<3?t:null===r?r=Object.getOwnPropertyDescriptor(t,n):r;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)u=Reflect.decorate(e,t,n,r);else for(var i=e.length-1;0<=i;i--)(a=e[i])&&(u=(o<3?a(u):3<o?a(t,n,u):a(t,n))||u);return 3<o&&u&&Object.defineProperty(t,n,u),u};Object.defineProperty(exports,"__esModule",{value:!0});var typescript_ioc_1=require("./IoC/typescript-ioc"),GameLanguages=function(){function e(){this._defaultLanguage="en-US",this._languages=[]}return Object.defineProperty(e.prototype,"defaultLanguage",{get:function(){return this._defaultLanguage},enumerable:!0,configurable:!0}),Object.defineProperty(e.prototype,"languages",{get:function(){return this._languages},enumerable:!0,configurable:!0}),e.prototype.init=function(e,t){this._defaultLanguage=t,this._languages=e},e=__decorate([typescript_ioc_1.Singleton],e)}();exports.GameLanguages=GameLanguages;

@@ -1,0 +1,1 @@
+"use strict";var ScreenOrientationEnum;Object.defineProperty(exports,"__esModule",{value:!0}),function(e){e[e.Portrait=0]="Portrait",e[e.Landscape=1]="Landscape",e[e.PortraitAndLandscape=2]="PortraitAndLandscape"}(ScreenOrientationEnum=exports.ScreenOrientationEnum||(exports.ScreenOrientationEnum={}));

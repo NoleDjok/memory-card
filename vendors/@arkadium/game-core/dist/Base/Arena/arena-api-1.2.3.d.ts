@@ -1,0 +1,38 @@
+export declare const ARK_game_arena_connector: {
+    _actionHandler: {};
+    _showGameEnd: boolean;
+    _scoreChangleLog: any[];
+    _score: number;
+    _playId: string;
+    _gameSecret: string;
+    _params: any[];
+    _arena_events_subscription: {};
+    _arena_return_values_subscription: {};
+    _TRUE_AS_STRING: string;
+    _messageSender: any;
+    _postInitCallback: any;
+    _md5: (string: any) => string;
+    _urlEncode: () => string;
+    _urlDecode: (str: any) => string;
+    _parseMessage: (string: any) => {
+        empty: boolean;
+        events: any[];
+        actions: any[];
+        params: any[];
+        returnValues: any[];
+        show_game_end: boolean;
+        play_id: string;
+    };
+    registerAction: (actionName: any, handler: any) => void;
+    fireEventToArena: (eventName: any, dataString?: any) => void;
+    showGameEnd: () => boolean;
+    changeScore: (score: any, comment: any) => void;
+    setGameSecret: (gameSecret: any) => void;
+    _handleMessageFromArena: (event: any) => void;
+    _iframe_messageSender: (message: any) => void;
+    _arkPage_messageSender: (message: any) => void;
+    getParam: (paramName: any, defaultValue: any) => any;
+    init: (postInitCallback: any, externalParams: any) => void;
+    doInit: (params: any) => void;
+    initTestingEnvironment: () => void;
+};

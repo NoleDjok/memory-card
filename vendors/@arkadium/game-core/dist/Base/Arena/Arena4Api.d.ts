@@ -1,0 +1,33 @@
+import { SoundManager } from "../Sound/SoundManager";
+import { ILanguage } from "../Localization/ILanguage";
+import { IArenaGameEndData } from "./IArenaGameEndData";
+import { BaseArenaApi } from "./BaseArenaApi";
+import { IArenaApi } from "./IArenaApi";
+export declare class Arena4Api extends BaseArenaApi implements IArenaApi {
+    private _arenaName;
+    constructor();
+    registerActions(handler: (param: any) => void): void;
+    initializeABTest(data: string): void;
+    handleGameStart(): void;
+    handleEventChange(): void;
+    changeScore(score: number): void;
+    handleMidrollRequest(): void;
+    handleMidrollStart(): void;
+    handleMidrollFinish(): void;
+    handleCustomEvent(eventName: any, dataString: any): void;
+    handleGameEnd(data: IArenaGameEndData): void;
+    shouldShowInternalGameEnd(): boolean;
+    absoluteURL(relativeUrl: string): string;
+    getLocale(supportedLanguages: Array<ILanguage>, defaultLanguageKey: string): string;
+    getArenaName(): string;
+    setArenaName(name: string): void;
+    handleInitInterstitial(publisherId: string): void;
+    handleLoadInterstitial(): void;
+    handleShowInterstitial(): void;
+    setSoundManager(soundManager: SoundManager): void;
+    getPlatform(): string;
+    rewardAvailable(): boolean;
+    showReward(callBack: (giveReward: boolean) => void): void;
+    getGameConfigUrl(): string;
+    getParam(paramName: any, defaultValue?: any): any;
+}

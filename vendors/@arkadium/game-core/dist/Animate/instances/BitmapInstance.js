@@ -1,0 +1,7 @@
+"use strict";
+/*!@license
+ * Copyright (c) Arkadium Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Denis Gusarov <denis.gusarov@arkadium.com>
+ */var __extends=this&&this.__extends||function(){var n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var r in e)e.hasOwnProperty(r)&&(t[r]=e[r])})(t,e)};return function(t,e){function r(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(r.prototype=e.prototype,new r)}}();Object.defineProperty(exports,"__esModule",{value:!0});var Instance_1=require("./Instance"),BitmapInstance=function(r){function t(t,e){return r.call(this,t,e)||this}return __extends(t,r),t.prototype.buildContent=function(t,e,r){if(void 0===e&&(e=!1),null!==this.libraryItem.spritesheetId&&void 0!==this.libraryItem.spritesheetId&&t.animate.__spritesheets[this.libraryItem.spritesheetId]){var n=t.animate.__spritesheets[this.libraryItem.spritesheetId].spritesheet.textures[this.libraryItem.assetId],i=new PIXI.Sprite(n);return i.name=this.libraryItem.assetId+"",i}var s=new PIXI.Sprite(PIXI.Texture.fromFrame(this.libraryItem.name));return s.name=this.libraryItem.name,s},t}(Instance_1.Instance);exports.BitmapInstance=BitmapInstance;

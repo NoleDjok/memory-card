@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var Point=function(){function t(t,o){void 0===t&&(t=0),void 0===o&&(o=0),this.x=t,this.y=o}return t.prototype.copyFrom=function(t){this.x=t.x,this.y=t.y},t.prototype.clear=function(){this.x=this.y=0},t}();exports.Point=Point;

@@ -1,0 +1,101 @@
+{
+  "games": [
+    {
+      "slug": "",
+      "assetOriginUrlOverride": "http://localhost:8080/",
+      "featured": null
+    }
+  ],
+  "feed": {
+    "feedName": "CoreTeamTesting",
+    "promoGame": "9-ball-pool",
+    "sorting": []
+  },
+  "tags": [
+    {
+      "name": "word",
+      "visible": true
+    },
+    {
+      "name": "card",
+      "visible": true
+    },
+    {
+      "name": "puzzles",
+      "visible": true
+    },
+    {
+      "name": "casino",
+      "visible": true
+    },
+    {
+      "name": "arcade",
+      "visible": true
+    }
+  ],
+  "theme": {
+    "name": "Challenges",
+    "slug": "theme-wp",
+    "clientHomePageUrl": null,
+    "domain": "http://arenax-challenges.arkadium.com/",
+    "logoPath": "//arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/arenax-challenges.arkadium.com/assets/png/logo.png",
+    "locale": "en",
+    "iconSprite": "",
+    "headerBgColorHex": "",
+    "headerTextColorHex": "",
+    "arenaClient": "Default",
+    "clientStyleURI": "http://arenax-client.cdn.arkadiumhosted.com/clients/dailymail/styles.css",
+    "useGeoIp": false,
+    "hasChallenges": false,
+    "hasLeaderboard": true,
+    "ads": {
+      "GAME_HEADER": true,
+      "GAME_SIDEBAR": true,
+      "GAME_VIDEO_PREROLL": true,
+      "WALL_TILE": true,
+      "WALL_DISPLAY": true,
+      "DisableVideo": {
+        "preroll": []
+      }
+    }
+  },
+  "ad": {
+    "product": null
+  },
+  "analytics": {
+    "account": "UA-110297256-6",
+    "additionalAccounts": [
+      {
+        "provider": "ga",
+        "account": "UA-53524189-1",
+        "prefix": "metroAcc"
+      }
+    ]
+  },
+  "categories": [
+    {
+      "name": "daily",
+      "orderName": null
+    },
+    {
+      "name": "word",
+      "orderName": null
+    },
+    {
+      "name": "card",
+      "orderName": null
+    },
+    {
+      "name": "puzzles",
+      "orderName": null
+    },
+    {
+      "name": "casino",
+      "orderName": null
+    },
+    {
+      "name": "arcade",
+      "orderName": null
+    }
+  ]
+}

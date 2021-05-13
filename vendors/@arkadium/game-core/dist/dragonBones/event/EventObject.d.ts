@@ -1,0 +1,30 @@
+import { BaseObject } from "../core/BaseObject";
+import { ActionData, UserData } from "../model/UserData";
+import { Armature } from "../armature/Armature";
+import { EventStringType } from "./IEventDispatcher";
+import { Bone } from "../armature/Bone";
+import { Slot } from "../armature/Slot";
+import { AnimationState } from "../animation/AnimationState";
+export declare class EventObject extends BaseObject {
+    static readonly START: string;
+    static readonly LOOP_COMPLETE: string;
+    static readonly COMPLETE: string;
+    static readonly FADE_IN: string;
+    static readonly FADE_IN_COMPLETE: string;
+    static readonly FADE_OUT: string;
+    static readonly FADE_OUT_COMPLETE: string;
+    static readonly FRAME_EVENT: string;
+    static readonly SOUND_EVENT: string;
+    static actionDataToInstance(data: ActionData, instance: EventObject, armature: Armature): void;
+    static toString(): string;
+    time: number;
+    type: EventStringType;
+    name: string;
+    armature: Armature;
+    bone: Bone | null;
+    slot: Slot | null;
+    animationState: AnimationState;
+    actionData: ActionData | null;
+    data: UserData | null;
+    protected _onClear(): void;
+}

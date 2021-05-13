@@ -1,0 +1,7 @@
+"use strict";
+/*!@license
+ * Copyright (c) Arkadium Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Denis Gusarov <denis.gusarov@arkadium.com>
+ */Object.defineProperty(exports,"__esModule",{value:!0});var Linq_1=require("../../Linq/Linq"),Queue_1=require("./Queue"),underscore_1=require("../../Utils/underscore"),QueueItem=function(){function t(e,u,t){this._name=e,this.condition=u,this.action=t,this.queue={action:this.action,condition:this.condition}}return t.prototype.addToQueue=function(e,u){void 0===e&&(e=0),t.queue[e]||(t.queue[e]=new Queue_1.Queue),t.queue[e].push(this.queue,u)},t.prototype.removeFromQueue=function(){for(var e in t.queue){var u=t.queue[e];u.remove(this.queue),delete u.items[this._name]}},t.queueCount=10,t.queue={},t}();exports.QueueItem=QueueItem;var QueueList=function(){function e(){this.items=new Linq_1.List}return e.prototype.get=function(e){if(!this[e])for(var u in QueueItem.queue){var t=QueueItem.queue[u];if(t.items[e])return t.items[e]}return this[e]},e.prototype.initialize=function(e,u){var n=this;underscore_1._u.each(e,function(e,u){var t=new QueueItem(u,e.condition,e.action);for(var i in n.items.Add(t),QueueItem.queue){QueueItem.queue[i].items[i]=t}n[u]=t},this)},e.prototype.dispose=function(){this.items.ForEach(function(e){e.removeFromQueue()})},e}();exports.QueueList=QueueList;
